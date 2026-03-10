@@ -23,7 +23,7 @@ export default function Layout({ children, title = 'Photography Studio', descrip
       />
       <div className="min-h-screen flex flex-col">
         <Header />
-        <main className="flex-grow">
+        <main className="flex-grow pt-16 md:pt-20">
           {children}
         </main>
         <Footer />

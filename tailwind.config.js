@@ -1,5 +1,11 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
-  theme: { extend: {} },
+  theme: {
+    extend: {
+      fontFamily: {
+        'script': ['Lemon', 'Dancing Script', 'Brush Script MT', 'Lucida Handwriting', 'cursive'],
+      }
+    }
+  },
   plugins: [],
 }
