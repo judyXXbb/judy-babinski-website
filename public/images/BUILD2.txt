@@ -1,0 +1,115 @@
+2026-03-11T00:16:39.255Z [INFO]: # Build environment configured with Standard build compute type: 8GiB Memory, 4vCPUs, 128GB Disk Space
+2026-03-11T00:16:39.751Z [INFO]: # Cloning repository: git@github.com:judyXXbb/judy-babinski-website.git
+2026-03-11T00:16:40.927Z [INFO]: 
+2026-03-11T00:16:40.928Z [INFO]: Cloning into 'judy-babinski-website'...
+2026-03-11T00:16:40.928Z [INFO]: # Switching to commit: 77f2047759935b1acf824943d03d85b300893a70
+2026-03-11T00:16:41.019Z [INFO]: Note: switching to '77f2047759935b1acf824943d03d85b300893a70'.
+                                 You are in 'detached HEAD' state. You can look around, make experimental
+                                 changes and commit them, and you can discard any commits you make in this
+                                 state without impacting any branches by switching back to a branch.
+                                 If you want to create a new branch to retain commits you create, you may
+                                 do so (now or later) by using -c with the switch command. Example:
+                                 git switch -c <new-branch-name>
+                                 Or undo this operation with:
+                                 git switch -
+                                 Turn off this advice by setting config variable advice.detachedHead to false
+                                 HEAD is now at 77f2047 Add Amplify build config to install pnpm
+2026-03-11T00:16:41.091Z [INFO]: Successfully cleaned up Git credentials
+2026-03-11T00:16:41.092Z [INFO]: # Checking for Git submodules at: /codebuild/output/src2061509621/src/judy-babinski-website/.gitmodules
+2026-03-11T00:16:41.098Z [INFO]: # Retrieving environment cache...
+2026-03-11T00:16:41.143Z [WARNING]: ! Unable to write cache: {"code":"ERR_BAD_REQUEST","message":"Request failed with status code 404"})}
+2026-03-11T00:16:41.143Z [INFO]: ---- Setting Up SSM Secrets ----
+2026-03-11T00:16:41.143Z [INFO]: SSM params {"Path":"/amplify/d1ahi8vn4l2svb/main/","WithDecryption":true}
+2026-03-11T00:16:41.186Z [WARNING]: !Failed to set up process.env.secrets
+2026-03-11T00:16:41.466Z [INFO]: # No package override configuration found.
+2026-03-11T00:16:41.469Z [INFO]: # Retrieving cache...
+2026-03-11T00:16:41.514Z [INFO]: # Retrieved cache
+2026-03-11T00:16:46.385Z [INFO]: ## Starting Backend Build
+                                 ## Checking for associated backend environment...
+                                 ## No backend environment association found, continuing...
+                                 ## Completed Backend Build
+2026-03-11T00:16:46.391Z [INFO]: {"backendDuration": 0}
+                                 ## Starting Frontend Build
+                                 # Starting phase: preBuild
+                                 # Executing command: npm install -g pnpm
+2026-03-11T00:17:03.420Z [INFO]: added 1 package in 13s
+                                 1 package is looking for funding
+                                 run `npm fund` for details
+2026-03-11T00:17:03.426Z [INFO]: # Executing command: pnpm install
+2026-03-11T00:17:04.908Z [INFO]: Lockfile is up to date, resolution step is skipped
+2026-03-11T00:17:04.946Z [INFO]: Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-03-11T00:17:04.985Z [INFO]: Packages: +342
+                                 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-03-11T00:17:05.948Z [INFO]: Progress: resolved 342, reused 0, downloaded 43, added 16
+2026-03-11T00:17:06.948Z [INFO]: Progress: resolved 342, reused 0, downloaded 63, added 28
+2026-03-11T00:17:07.949Z [INFO]: Progress: resolved 342, reused 0, downloaded 199, added 179
+2026-03-11T00:17:08.949Z [INFO]: Progress: resolved 342, reused 0, downloaded 341, added 341
+2026-03-11T00:17:09.363Z [INFO]: Progress: resolved 342, reused 0, downloaded 342, added 342, done
+2026-03-11T00:17:09.554Z [INFO]: dependencies:
+                                 + @next/font 14.2.15
+                                 + @tailwindcss/postcss 4.1.0
+                                 + @types/nodemailer 7.0.11
+                                 + autoprefixer 10.4.20
+                                 + gray-matter 4.0.3
+                                 + lucide-react 0.468.0
+                                 + next 15.5.0
+                                 + next-seo 6.6.0
+                                 + nodemailer 8.0.1
+                                 + postcss 8.5.1
+                                 + react 19.0.0
+                                 + react-dom 19.0.0
+                                 + tailwindcss 4.1.0
+                                 + typescript 5.9.2
+                                 devDependencies:
+                                 + @types/node 22.9.0
+                                 + @types/react 19.0.0
+                                 + @types/react-dom 19.0.0
+                                 + eslint 9.18.0
+                                 + eslint-config-next 15.5.3
+                                 + prettier 3.3.3
+                                 ╭ Warning ─────────────────────────────────────────────────────────────────────╮
+                                 │                                                                              │
+                                 │   Ignored build scripts: sharp, unrs-resolver.                               │
+                                 │   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+                                 │   to run scripts.                                                            │
+                                 │                                                                              │
+                                 ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-03-11T00:17:09.570Z [INFO]: Done in 4.9s using pnpm v10.17.0
+2026-03-11T00:17:09.604Z [INFO]: # Completed phase: preBuild
+                                 # Starting phase: build
+                                 # Executing command: pnpm run build
+2026-03-11T00:17:10.037Z [INFO]: > photography-website@1.0.0 build /codebuild/output/src2061509621/src/judy-babinski-website
+                                 > next build
+2026-03-11T00:17:10.608Z [INFO]: ⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+2026-03-11T00:17:10.627Z [INFO]: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+2026-03-11T00:17:10.628Z [INFO]: This information is used to shape Next.js' roadmap and prioritize features.
+                                 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+                                 https://nextjs.org/telemetry
+2026-03-11T00:17:10.679Z [INFO]: ▲ Next.js 15.5.0
+2026-03-11T00:17:10.679Z [INFO]: - Experiments (use with caution):
+                                 · optimizePackageImports
+2026-03-11T00:17:10.679Z [INFO]: 
+2026-03-11T00:17:10.732Z [INFO]: Linting and checking validity of types ...
+2026-03-11T00:17:13.598Z [WARNING]: Failed to compile.
+2026-03-11T00:17:13.599Z [WARNING]: .next/types/validator.ts:71:11
+                                    Type error: Type 'typeof import("/codebuild/output/src2061509621/src/judy-babinski-website/src/pages/api/contact")' does not satisfy the expected type 'ApiRouteConfig'.
+                                    The types returned by 'default(...)' are incompatible between these types.
+                                    Type 'Promise<NextApiResponse<any> | undefined>' is not assignable to type 'void | Promise<void> | Response | Promise<Response>'.
+                                    Type 'Promise<NextApiResponse<any> | undefined>' is not assignable to type 'Promise<void>'.
+                                    Type 'NextApiResponse<any> | undefined' is not assignable to type 'void'.
+                                    Type 'NextApiResponse<any>' is not assignable to type 'void'.
+                                    [0m [90m 69 |[39m {
+                                    [90m 70 |[39m   [36mconst[39m handler [33m=[39m {} [36mas[39m [36mtypeof[39m [36mimport[39m([32m"../../src/pages/api/contact.js"[39m)
+                                    [31m[1m>[22m[39m[90m 71 |[39m   handler satisfies [33mApiRouteConfig[39m
+                                    [90m    |[39m           [31m[1m^[22m[39m
+                                    [90m 72 |[39m }
+                                    [90m 73 |[39m
+                                    [90m 74 |[39m[0m
+2026-03-11T00:17:13.615Z [WARNING]: Next.js build worker exited with code: 1 and signal: null
+2026-03-11T00:17:13.634Z [INFO]: ELIFECYCLE  Command failed with exit code 1.
+2026-03-11T00:17:13.647Z [ERROR]: !!! Build failed
+2026-03-11T00:17:13.647Z [INFO]: Please read more about Amplify Hosting's support for SSR frameworks to find if your build failure is related to an unsupported feature: https://docs.aws.amazon.com/amplify/latest/userguide/amplify-ssr-framework-support.html. You may also find this troubleshooting guide useful: https://docs.aws.amazon.com/amplify/latest/userguide/troubleshooting-ssr-deployment.html
+2026-03-11T00:17:13.647Z [ERROR]: !!! Error: Command failed with exit code 1
+2026-03-11T00:17:13.647Z [INFO]: # Starting environment caching...
+2026-03-11T00:17:13.648Z [INFO]: # Environment caching completed
+
