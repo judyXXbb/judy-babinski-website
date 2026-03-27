@@ -1,10 +1,15 @@
-import json, re, urllib.request, sys, os
+import json, re, urllib.request, sys, os, traceback
 from datetime import date
 
-WEBHOOK = os.environ["DISCORD_WEBHOOK"]
+WEBHOOK = os.environ.get("DISCORD_WEBHOOK", "")
 REPO = "judy-babinski-website"
 
+if not WEBHOOK:
+    print("ERROR: DISCORD_WEBHOOK environment variable is not set")
+    sys.exit(1)
+
 def send_discord(msg):
+    print(f"Sending Discord message ({len(msg)} chars)...")
     body = json.dumps({"content": msg[:2000]}).encode()
     req = urllib.request.Request(WEBHOOK, data=body, headers={"Content-Type": "application/json"})
     urllib.request.urlopen(req)
@@ -70,5 +75,10 @@ for v in deduped:
     msg += f"**{v['package']} {v['version']}**\n{v['summary']}\nhttps://osv.dev/vulnerability/{v['id']}\n\n"
 msg += "*This scan runs independently of deployments and reflects the current state of the lock file on main.*"
 
-send_discord(msg)
-print(f"Discord alert sent: {len(deduped)} vulnerabilities found")
+try:
+    send_discord(msg)
+    print(f"Discord alert sent: {len(deduped)} vulnerabilities found")
+except Exception as e:
+    print(f"ERROR sending Discord alert: {e}")
+    traceback.print_exc()
+    sys.exit(1)
