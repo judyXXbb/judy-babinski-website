@@ -11,7 +11,10 @@ if not WEBHOOK:
 def send_discord(msg):
     print(f"Sending Discord message ({len(msg)} chars)...")
     body = json.dumps({"content": msg[:2000]}).encode()
-    req = urllib.request.Request(WEBHOOK, data=body, headers={"Content-Type": "application/json"})
+    req = urllib.request.Request(WEBHOOK, data=body, headers={
+        "Content-Type": "application/json",
+        "User-Agent": "CVEMonitor/1.0"
+    })
     urllib.request.urlopen(req)
 
 # Read and parse pnpm-lock.yaml
