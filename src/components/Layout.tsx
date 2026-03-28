@@ -20,6 +20,10 @@ export default function Layout({ children, title = 'Photography Studio', descrip
           description,
           type: 'website',
         }}
+        additionalMetaTags={[{
+          name: 'google-site-verification',
+          content: 'klOovqtK6rEySEklPrmt18oXXirpLUgttlMzVs6SwYU'
+        }]}
       />
       <div className="min-h-screen flex flex-col">
         <Header />
