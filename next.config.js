@@ -10,6 +10,14 @@ const nextConfig = {
     maxInactiveAge: 60 * 1000,      // Keep pages in memory for 1 minute
     pagesBufferLength: 5,           // Limit concurrent page compilation
   },
+  async rewrites() {
+    return [
+      {
+        source: '/sitemap.xml',
+        destination: '/api/sitemap',
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig
