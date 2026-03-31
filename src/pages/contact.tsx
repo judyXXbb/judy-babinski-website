@@ -16,6 +16,10 @@ const montserrat = Montserrat({
   display: 'swap',
 })
 
+export const getServerSideProps = async () => {
+  return { props: {} }
+}
+
 export default function ContactPage() {
   return (
     <Layout title="Contact" description="Contact Judy Babinski Photography">
