@@ -14,6 +14,7 @@ export default function ContactForm() {
   const [message, setMessage] = useState('')
   const [captchaAnswer, setCaptchaAnswer] = useState('')
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error' | 'captchaFail'>('idle')
+  const [errorDetail, setErrorDetail] = useState('')
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -38,6 +39,8 @@ export default function ContactForm() {
       setMessage('')
       setCaptchaAnswer('')
     } else {
+      const data = await res.json()
+      setErrorDetail(data.error || 'Unknown error')
       setStatus('error')
     }
   }
@@ -125,7 +128,7 @@ export default function ContactForm() {
       )}
       {status === 'error' && (
         <p className={montserrat.className} style={{ color: '#cc0000', fontSize: '13px', marginTop: '10px' }}>
-          Something went wrong. Please try again or email directly.
+          {errorDetail}
         </p>
       )}
 
