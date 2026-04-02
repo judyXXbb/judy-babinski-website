@@ -7,6 +7,10 @@ frontend:
         - pnpm install
     build:
       commands:
+        - echo "CONTACT_SMTP_HOST=$CONTACT_SMTP_HOST" >> .env.production
+        - echo "CONTACT_SMTP_PORT=$CONTACT_SMTP_PORT" >> .env.production
+        - echo "CONTACT_EMAIL_USER=$CONTACT_EMAIL_USER" >> .env.production
+        - echo "CONTACT_EMAIL_PASS=$CONTACT_EMAIL_PASS" >> .env.production
         - pnpm run build
   artifacts:
     baseDirectory: .next

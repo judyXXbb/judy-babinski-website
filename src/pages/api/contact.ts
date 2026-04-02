@@ -4,11 +4,6 @@ import nodemailer from 'nodemailer'
 export default async function handler(req: NextApiRequest, res: NextApiResponse): Promise<void> {
   if (req.method !== 'POST') { res.status(405).end(); return }
 
-  if (!process.env.CONTACT_SMTP_HOST) {
-    res.status(500).json({ error: `ENV MISSING - HOST:${process.env.CONTACT_SMTP_HOST} USER:${process.env.CONTACT_EMAIL_USER} PORT:${process.env.CONTACT_SMTP_PORT}` })
-    return
-  }
-
   const { name, email, message } = req.body
 
   const transporter = nodemailer.createTransport({
@@ -33,6 +28,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     res.status(200).json({ success: true })
   } catch (error) {
     console.error(error)
-    res.status(500).json({ error: String(error) })
+    res.status(500).json({ error: 'Failed to send email' })
   }
 }
