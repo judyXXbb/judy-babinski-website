@@ -22,7 +22,7 @@ export const getServerSideProps = async () => {
 
 export default function ContactPage() {
   return (
-    <Layout title="Contact" description="Contact Judy Babinski Photography">
+    <Layout title="Contact Judy Babinski Photography | Detroit Headshots" description="Book a headshot session or get in touch with Judy Babinski Photography. Serving Detroit Metro. Call 972-953-6259 or use the contact form.">
 
       {/* Page Header */}
       <div className="text-center pt-[52px] pb-8" style={{ backgroundColor: '#ffffff' }}>

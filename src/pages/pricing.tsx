@@ -16,22 +16,22 @@ const playfair = Playfair_Display({
 })
 
 const gridImages = [
-  { src: '/images/Julie.jpg', alt: 'Professional headshot by Judy Babinski Photography' },
-  { src: '/images/Justin.jpg', alt: 'Professional headshot by Judy Babinski Photography' },
-  { src: '/images/Kelley.jpg', alt: 'Professional headshot by Judy Babinski Photography' },
-  { src: '/images/Tobias.jpg', alt: 'Professional headshot by Judy Babinski Photography' },
+  { src: '/images/Julie.jpg', alt: 'Professional headshot of Julie by Detroit headshot photographer Judy Babinski' },
+  { src: '/images/Justin.jpg', alt: 'Professional headshot of Justin by Detroit headshot photographer Judy Babinski' },
+  { src: '/images/Kelley.jpg', alt: 'Professional headshot of Kelley by Detroit headshot photographer Judy Babinski' },
+  { src: '/images/Tobias.jpg', alt: 'Professional headshot of Tobias by Detroit headshot photographer Judy Babinski' },
 ]
 
 export default function PricingPage() {
   return (
-    <Layout title="Pricing" description="Headshot photography pricing and session options">
+    <Layout title="Headshot Photography Pricing | Judy Babinski Photography" description="Headshot session pricing for Detroit and Dallas. Extended and Express studio sessions starting at $200. Flexible packages for corporate headshots, actors, and personal branding.">
 
       {/* Page Header */}
       <div className="bg-gray-50 py-8">
         <div className="text-center">
           <div className="w-16 h-px bg-gray-400 mx-auto mb-4"></div>
           <h1 className={`text-[50px] font-medium tracking-widest ${playfair.className}`} style={{ color: '#666666' }}>
-            PRICING
+            HEADSHOT SESSION PRICING
           </h1>
           <div className="w-16 h-px bg-gray-400 mx-auto mt-4"></div>
         </div>

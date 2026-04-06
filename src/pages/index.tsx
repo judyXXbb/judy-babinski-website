@@ -24,7 +24,7 @@ export default function HomePage({ frontmatter, content }: { frontmatter: any, c
       <HeadshotGallery />
       <TwoColumnSection
         imageSrc="/images/lily.png"
-        imageAlt="Professional photography sample"
+        imageAlt="Professional headshot of Lily by Detroit headshot photographer Judy Babinski"
         title="Ordinary people. Extraordinary smiles!"
         content="You don't have to be a movie star to have a great headshot. It only takes great coaching, great lighting, and a relaxed and comfortable you!"
       />

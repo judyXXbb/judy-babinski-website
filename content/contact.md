@@ -1,7 +1,7 @@
 ---
-title: "Contact Us - Your Site Title"
-description: "Your contact page description goes here"
-pageTitle: "Contact Us"
+title: "Contact Judy Babinski Photography | Detroit Headshots"
+description: "Book a headshot session or get in touch with Judy Babinski Photography. Serving Detroit Metro. Call 972-953-6259 or use the contact form."
+pageTitle: "Contact"
 showContactForm: true
 ---
 
