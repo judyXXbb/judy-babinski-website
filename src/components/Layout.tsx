@@ -28,7 +28,8 @@ interface LayoutProps {
 
 export default function Layout({ children, title = 'Judy Babinski Photography | Headshots Detroit', description = 'Professional headshot photography in Detroit. Corporate headshots, actor headshots, and personal branding.' }: LayoutProps) {
   const router = useRouter()
-  const canonicalUrl = `${SITE_URL}${router.asPath === '/' ? '' : router.asPath}`
+  const path = router.pathname === '/' ? '' : router.pathname
+  const canonicalUrl = `${SITE_URL}${path}`
 
   return (
     <>
