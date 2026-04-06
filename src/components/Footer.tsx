@@ -31,7 +31,7 @@ export default function Footer() {
             <div className="flex justify-center" style={{ marginBottom: '9px' }}>
               <hr className="border-gray-600 w-[30px]" />
             </div>
-            <h3 className={`tracking-wide ${playfair.className}`} style={{ fontSize: '14px', color: '#666666', marginBottom: '9px' }}>CONTACT US</h3>
+            <p className={`tracking-wide ${playfair.className}`} style={{ fontSize: '14px', color: '#666666', marginBottom: '9px' }}>CONTACT US</p>
             <div className="flex justify-center mb-4">
               <hr className="border-gray-600 w-[30px]" />
             </div>
