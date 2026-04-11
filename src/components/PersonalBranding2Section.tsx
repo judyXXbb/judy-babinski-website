@@ -21,7 +21,7 @@ export default function PersonalBranding2Section() {
         <div className="flex items-center px-12 py-16 lg:py-24" style={{ backgroundColor: '#f5f5f5' }}>
           <div>
             <h2 className={`text-[50px] mb-6 ${playfair.className}`} style={{ color: '#666666' }}>
-              Personal Branding
+              Branding For Creators
             </h2>
             <p className={`text-lg leading-relaxed ${montserrat.className}`} style={{ color: '#666666' }}>
               You are more than just your headshot. You are adventurous, artistic, confident! Let&apos;s show your
@@ -34,7 +34,7 @@ export default function PersonalBranding2Section() {
         <div className="w-full">
           <Image
             src="/images/Lauren tryptch_WS.jpg"
-            alt="Personal branding photography by Judy Babinski Photography"
+            alt="Branding portraits for entrepreneurs by Judy Babinski Photography"
             width={1200}
             height={800}
             style={{ width: '100%', height: 'auto', display: 'block' }}

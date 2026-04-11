@@ -29,16 +29,16 @@ export default function ActorModelHeadshotsSection() {
       <div className="pb-12" style={{ backgroundColor: '#f5f5f5' }}>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
           <div className="aspect-square relative overflow-hidden">
-            <Image src="/images/floyd-s5.jpg" alt="Actor & model headshot by Judy Babinski Photography" fill className="object-cover" />
+            <Image src="/images/floyd-s5.jpg" alt="Headshot of professional ballet dancer" fill className="object-cover" />
           </div>
           <div className="aspect-square relative overflow-hidden">
-            <Image src="/images/Ashleigh.jpg" alt="Actor & model headshot by Judy Babinski Photography" fill className="object-cover" />
+            <Image src="/images/Ashleigh.jpg" alt="Headshot of model and actress with blonde hair" fill className="object-cover" />
           </div>
           <div className="aspect-square relative overflow-hidden">
-            <Image src="/images/Raviteja-v1.jpg" alt="Actor & model headshot by Judy Babinski Photography" fill className="object-cover" />
+            <Image src="/images/Raviteja-v1.jpg" alt="Headshot of professional actor" fill className="object-cover" />
           </div>
           <div className="aspect-square relative overflow-hidden">
-            <Image src="/images/Claire1.jpg" alt="Actor & model headshot by Judy Babinski Photography" fill className="object-cover" />
+            <Image src="/images/Claire1.jpg" alt="Professional headshot of model with red hair" fill className="object-cover" />
           </div>
         </div>
 

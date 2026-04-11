@@ -21,7 +21,7 @@ export default function PersonalBrandingSection() {
         <div className="w-full">
           <Image
             src="/images/Andreza tryptch_WS.jpg"
-            alt="Personal branding photography by Judy Babinski Photography"
+            alt="Branding portraits for fitness instructors"
             width={1200}
             height={800}
             style={{ width: '100%', height: 'auto', display: 'block' }}

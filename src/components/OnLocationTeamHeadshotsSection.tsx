@@ -20,7 +20,7 @@ export default function OnLocationTeamHeadshotsSection() {
       <div className="text-center pt-[26px] pb-8" style={{ backgroundColor: '#ffffff' }}>
         <div className="w-16 h-px bg-gray-400 mx-auto mb-4"></div>
         <h2 className={`text-[50px] font-normal ${playfair.className}`} style={{ color: '#666666' }}>
-          On Location Team Headshots
+          Team Headshots
         </h2>
         <div className="w-16 h-px bg-gray-400 mx-auto mt-4"></div>
       </div>
@@ -31,7 +31,7 @@ export default function OnLocationTeamHeadshotsSection() {
         <div className="w-full">
           <Image
             src="/images/Office Photos 3_WS.jpg"
-            alt="On location corporate headshots by Judy Babinski Photography"
+            alt="On-location team headshots"
             width={1200}
             height={800}
             style={{ width: '100%', height: 'auto', display: 'block' }}

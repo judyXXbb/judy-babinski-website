@@ -17,9 +17,9 @@ const playfair = Playfair_Display({
 
 const gridImages = [
   { src: '/images/Julie.jpg', alt: 'Professional headshot of Julie by Detroit headshot photographer Judy Babinski' },
-  { src: '/images/Justin.jpg', alt: 'Professional headshot of Justin by Detroit headshot photographer Judy Babinski' },
-  { src: '/images/Kelley.jpg', alt: 'Professional headshot of Kelley by Detroit headshot photographer Judy Babinski' },
-  { src: '/images/Tobias.jpg', alt: 'Professional headshot of Tobias by Detroit headshot photographer Judy Babinski' },
+  { src: '/images/Justin.jpg', alt: 'Business headshot of Justin for his Linkedin account' },
+  { src: '/images/Kelley.jpg', alt: 'Professional headshot of Kelly, retiring military, for his Linkedin account' },
+  { src: '/images/Tobias.jpg', alt: 'Professional headshot of Tobias, retiring military, for his Linkedin account' },
 ]
 
 export default function PricingPage() {

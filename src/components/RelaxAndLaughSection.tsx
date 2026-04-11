@@ -33,7 +33,7 @@ export default function RelaxAndLaughSection() {
         <div className="w-full">
           <Image
             src="/images/Idris.jpg"
-            alt="Relaxed and laughing headshot expressions by Judy Babinski Photography"
+            alt="Idris enjoying & loving his headshot"
             width={1200}
             height={800}
             style={{ width: '100%', height: 'auto', display: 'block' }}

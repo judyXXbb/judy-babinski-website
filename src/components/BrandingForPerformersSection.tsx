@@ -33,7 +33,7 @@ export default function BrandingForPerformersSection() {
         <div className="w-full">
           <Image
             src="/images/Floyd tryptch_WS.jpg"
-            alt="Branding for performers by Judy Babinski Photography"
+            alt="Branding portraits for professional dancers"
             width={1200}
             height={800}
             style={{ width: '100%', height: 'auto', display: 'block' }}

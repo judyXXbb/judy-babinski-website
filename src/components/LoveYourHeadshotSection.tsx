@@ -39,7 +39,7 @@ export default function LoveYourHeadshotSection() {
         <div className="w-full">
           <Image
             src="/images/Judy dyptich_F.jpg"
-            alt="Judy Babinski Photography diptych"
+            alt="Diptych of Judy laughing"
             width={1200}
             height={800}
             style={{ width: '100%', height: 'auto' }}

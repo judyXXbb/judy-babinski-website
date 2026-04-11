@@ -21,7 +21,7 @@ export default function BrandingForActorsSection() {
         <div className="w-full">
           <Image
             src="/images/Webb Tryptch_WS.jpg"
-            alt="Branding for actors by Judy Babinski Photography"
+            alt="Branding portraits for actors by Judy Babinski Photography"
             width={1200}
             height={800}
             style={{ width: '100%', height: 'auto', display: 'block' }}

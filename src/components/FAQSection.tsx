@@ -166,7 +166,7 @@ export default function FAQSection() {
           {/* Left: What To Wear */}
           <div style={{ backgroundColor: '#ffffff', marginTop: '40px', marginBottom: '40px', marginRight: '20px', paddingLeft: '20px', paddingRight: '20px', paddingTop: '20px' }}>
             <h3 className={`uppercase ${montserrat.className}`} style={{ color: '#666666', fontSize: '14px', fontWeight: '300', marginBottom: '12px' }}>
-              What To Wear
+              What To Wear For Your Headshot Session
             </h3>
             <p className={`mb-6 ${openSans.className}`} style={{ color: '#666666', fontSize: '14px', fontWeight: '400', lineHeight: '1.9em' }}>
               Clothing should compliment the most important feature of your headshot, your face and expression. It is best
@@ -181,7 +181,7 @@ export default function FAQSection() {
           {/* Right: Hair & Makeup */}
           <div style={{ backgroundColor: '#ffffff', marginTop: '40px', marginBottom: '40px', marginLeft: '20px', paddingLeft: '20px', paddingRight: '20px', paddingTop: '20px' }}>
             <h3 className={`uppercase ${montserrat.className}`} style={{ color: '#666666', fontSize: '14px', fontWeight: '300', marginBottom: '12px' }}>
-              Hair &amp; Makeup
+              Hair &amp; Makeup Tips For Your Headshot Session
             </h3>
             <p className={`mb-6 ${openSans.className}`} style={{ color: '#666666', fontSize: '14px', fontWeight: '400', lineHeight: '1.9em' }}>
               The focus is on your face and expression. Makeup and hair should complement your warm and authentic

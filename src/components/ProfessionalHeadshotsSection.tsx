@@ -29,16 +29,16 @@ export default function ProfessionalHeadshotsSection() {
       <div className="pb-12" style={{ backgroundColor: '#f5f5f5' }}>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
           <div className="aspect-square relative overflow-hidden">
-            <Image src="/images/Natalie.jpg" alt="Professional headshot by Judy Babinski Photography" fill className="object-cover" />
+            <Image src="/images/Natalie.jpg" alt="Headshot of entrepreneur coffee shop owner" fill className="object-cover" />
           </div>
           <div className="aspect-square relative overflow-hidden">
-            <Image src="/images/Randy.jpg" alt="Professional headshot by Judy Babinski Photography" fill className="object-cover" />
+            <Image src="/images/Randy.jpg" alt="Professional Headshot by Judy Babinski" fill className="object-cover" />
           </div>
           <div className="aspect-square relative overflow-hidden">
-            <Image src="/images/Marcel.jpg" alt="Professional headshot by Judy Babinski Photography" fill className="object-cover" />
+            <Image src="/images/Marcel.jpg" alt="Professional headshot photography for architects" fill className="object-cover" />
           </div>
           <div className="aspect-square relative overflow-hidden">
-            <Image src="/images/Bill.jpg" alt="Professional headshot by Judy Babinski Photography" fill className="object-cover" />
+            <Image src="/images/Bill.jpg" alt="Corporate headshots by Judy Babinski, Detroit, MI" fill className="object-cover" />
           </div>
         </div>
 

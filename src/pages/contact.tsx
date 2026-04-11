@@ -41,7 +41,7 @@ export default function ContactPage() {
           <div style={{ marginTop: '40px', marginBottom: '40px', marginRight: '20px' }}>
             <Image
               src="/images/Judy-Babinski-Photography-Dallas-On-Site-headshots.jpg"
-              alt="Judy Babinski on-site headshots photographer"
+              alt="Team Headshots by Judy Babinski"
               width={800}
               height={1200}
               style={{ width: '100%', height: 'auto', display: 'block' }}

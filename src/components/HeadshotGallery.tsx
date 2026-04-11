@@ -9,14 +9,14 @@ const playfair = Playfair_Display({
 
 export default function HeadshotGallery() {
   const headshotImages = [
-    { src: '/images/Andrea_IG.jpg', alt: 'Professional headshot of Andrea by Judy Babinski Photography' },
-    { src: '/images/James_IG.jpg', alt: 'Professional headshot of James by Judy Babinski Photography' },
-    { src: '/images/Cindy.jpg', alt: 'Professional headshot of Cindy by Judy Babinski Photography' },
-    { src: '/images/Tyler.jpg', alt: 'Professional headshot of Tyler by Judy Babinski Photography' },
-    { src: '/images/Caleb.jpg', alt: 'Professional headshot of Caleb by Judy Babinski Photography' },
-    { src: '/images/Nykol.jpg', alt: 'Professional headshot of Nykol by Judy Babinski Photography' },
-    { src: '/images/Hs.jpg', alt: 'Professional headshot by Judy Babinski Photography' },
-    { src: '/images/Rocio.jpg', alt: 'Professional headshot of Rocio by Judy Babinski Photography' },
+    { src: '/images/Andrea_IG.jpg', alt: 'Headshot of medical professional' },
+    { src: '/images/James_IG.jpg', alt: 'Headshot of James for his Linkedin account' },
+    { src: '/images/Cindy.jpg', alt: 'Headshot of Cindy, a corporate professional' },
+    { src: '/images/Tyler.jpg', alt: 'Professional headshot of Tyler for his Linkedin account' },
+    { src: '/images/Caleb.jpg', alt: 'Headshot of Caleb, retiring military, for his Linkedin account' },
+    { src: '/images/Nykol.jpg', alt: 'Smiling headshot of Nykol, dancer and actress' },
+    { src: '/images/Hs.jpg', alt: 'Impish headshot by Judy Babinski Photography' },
+    { src: '/images/Rocio.jpg', alt: 'Headshot of Rocio for her Linkedin account' },
   ]
 
   return (
