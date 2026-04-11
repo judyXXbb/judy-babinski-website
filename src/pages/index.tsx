@@ -13,6 +13,7 @@ import BrandingHeaderSection from '@/components/BrandingHeaderSection'
 import PersonalBrandingSection from '@/components/PersonalBrandingSection'
 import BrandingForPerformersSection from '@/components/BrandingForPerformersSection'
 import BrandingForActorsSection from '@/components/BrandingForActorsSection'
+import ProfessionalHeadshotsSection from '@/components/ProfessionalHeadshotsSection'
 import PersonalBranding2Section from '@/components/PersonalBranding2Section'
 import matter from 'gray-matter'
 import fs from 'fs'
@@ -36,6 +37,7 @@ export default function HomePage({ frontmatter, content }: { frontmatter: any, c
       <FAQSection />
       <BusinessHeadshotsSection />
       <ActorModelHeadshotsSection />
+      <ProfessionalHeadshotsSection />
       <BrandingHeaderSection />
       <PersonalBrandingSection />
       <BrandingForPerformersSection />

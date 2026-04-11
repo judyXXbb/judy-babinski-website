@@ -22,10 +22,10 @@ interface TwoColumnSectionProps {
 
 export default function TwoColumnSection({ imageSrc, imageAlt, title, content }: TwoColumnSectionProps) {
   return (
-    <section style={{ backgroundColor: '#f6f6f6' }}>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+    <section>
+      <div className="grid grid-cols-1 lg:grid-cols-2">
           {/* Photo on the left */}
-          <div className="order-2 lg:order-1">
+          <div className="w-full">
             <Image
               src={imageSrc}
               alt={imageAlt}
@@ -36,7 +36,7 @@ export default function TwoColumnSection({ imageSrc, imageAlt, title, content }:
           </div>
 
           {/* Text content on the right */}
-          <div className="order-1 lg:order-2 space-y-6 px-8 flex flex-col justify-center">
+          <div className="flex flex-col justify-center space-y-6 px-12 py-12" style={{ backgroundColor: '#f5f5f5' }}>
             <h2 className={`text-3xl lg:text-4xl leading-tight font-bold ${playfair.className}`} style={{color: '#666666'}}>
               {title}
             </h2>
