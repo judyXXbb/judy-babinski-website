@@ -26,12 +26,12 @@ export default function OnLocationTeamHeadshotsSection() {
       </div>
 
       {/* Two Column Layout */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ backgroundColor: '#f5f5f5' }}>
+      <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] items-center" style={{ backgroundColor: '#f5f5f5' }}>
         {/* Left: Image */}
         <div className="w-full">
           <Image
-            src="/images/Office Photos 3_WS.jpg"
-            alt="On-location team headshots"
+            src="/images/Berkley-Chamber-of-Commerce-Board.jpg"
+            alt="Headshots of the board members of the Berkley area Chamber of Commerce"
             width={1200}
             height={800}
             style={{ width: '100%', height: 'auto', display: 'block' }}
