@@ -39,7 +39,8 @@ export default function OnLocationTeamHeadshotsSection() {
         </div>
 
         {/* Right: Text */}
-        <div className={`text-lg leading-relaxed ${montserrat.className}`} style={{ color: '#666666' }}>
+        <div className={`flex items-center px-12 py-16 lg:py-24 ${montserrat.className}`} style={{ color: '#666666', backgroundColor: '#f5f5f5' }}>
+          <div className="text-lg leading-relaxed">
           <p>
             You would love to have headshots of your key personnel on your corporate website showing the friendly and
             competent team that your clients can rely on. I can help you make that happen in a comfortable and efficient
@@ -53,6 +54,7 @@ export default function OnLocationTeamHeadshotsSection() {
           <p className="mt-4">
             Don&apos;t hesitate to contact me for a proposal.
           </p>
+          </div>
         </div>
       </div>
     </section>
