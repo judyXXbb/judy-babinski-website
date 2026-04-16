@@ -24,7 +24,7 @@ const gridImages = [
 
 export default function PricingPage() {
   return (
-    <Layout title="Headshot Photography Pricing | Judy Babinski Photography" description="Headshot session pricing for Detroit and Dallas. Extended and Express studio sessions starting at $200. Flexible packages for corporate headshots, actors, and personal branding.">
+    <Layout title="Headshot Photography Pricing | Judy Babinski Photography" description="Headshot session pricing for Detroit Metro. Extended and Express studio sessions starting at $200. Flexible packages for corporate headshots, actors, and personal branding.">
 
       {/* Page Header */}
       <div className="bg-gray-50 py-8">
