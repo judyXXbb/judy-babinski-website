@@ -40,7 +40,7 @@ export default function ContactPage() {
           {/* Left: Image */}
           <div style={{ marginTop: '40px', marginBottom: '40px', marginRight: '20px' }}>
             <Image
-              src="/images/Judy-Babinski-Photography-Detroit-Metro-On-Site-headshots.jpg"
+              src="/images/Judy-Babinski-Photography-Detroit-Metro-Team-Headshots.jpg"
               alt="Team Headshots by Judy Babinski"
               width={800}
               height={1200}
