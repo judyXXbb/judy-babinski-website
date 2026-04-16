@@ -94,6 +94,13 @@ export default function Header() {
               >
                 Pricing
               </Link>
+              <Link
+                href="/reviews"
+                className="text-[#666666] hover:text-[#444444] block px-3 py-2 text-base font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Reviews
+              </Link>
             </div>
           </div>
         )}

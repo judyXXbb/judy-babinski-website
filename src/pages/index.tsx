@@ -44,6 +44,16 @@ export default function HomePage({ frontmatter, content }: { frontmatter: any, c
       <BrandingForActorsSection />
       <PersonalBranding2Section />
       <OnLocationTeamHeadshotsSection />
+      {/* Reviews Link */}
+      <div className="text-center py-12" style={{ backgroundColor: '#ffffff' }}>
+        <a
+          href="/reviews"
+          className="inline-block px-6 py-3 rounded-full font-medium tracking-wider uppercase transition-colors"
+          style={{ fontSize: '14px', color: '#666666', backgroundColor: 'rgba(158,239,217,0.41)', fontFamily: 'inherit' }}
+        >
+          Read Client Reviews
+        </a>
+      </div>
       <div style={{ height: '25px', backgroundColor: '#ffffff' }} />
     </Layout>
   )
