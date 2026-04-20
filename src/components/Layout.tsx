@@ -26,6 +26,13 @@ const localBusinessSchema = {
   },
   areaServed: { '@type': 'City', name: 'Detroit', containedInPlace: { '@type': 'State', name: 'Michigan' } },
   priceRange: '$$',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5.0',
+    reviewCount: '16',
+    bestRating: '5',
+    worstRating: '1',
+  },
 }
 
 interface LayoutProps {

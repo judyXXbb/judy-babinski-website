@@ -1,23 +1,23 @@
-import { Facebook, Instagram } from 'lucide-react'
+import { Facebook, Instagram, Linkedin } from 'lucide-react'
 import { Playfair_Display, Open_Sans, Crimson_Text } from 'next/font/google'
 
 const playfair = Playfair_Display({
   weight: ['400'],
   subsets: ['latin'],
-  display: 'swap',
+  display: 'optional',
 })
 
 const openSans = Open_Sans({
   weight: ['400'],
   subsets: ['latin'],
-  display: 'swap',
+  display: 'optional',
 })
 
 const crimsonText = Crimson_Text({
   weight: ['400'],
   style: ['italic'],
   subsets: ['latin'],
-  display: 'swap',
+  display: 'optional',
 })
 
 export default function Footer() {
@@ -48,10 +48,13 @@ export default function Footer() {
             <p className={`text-center ${crimsonText.className}`} style={{ fontSize: '22px', fontStyle: 'italic', color: '#666666', lineHeight: '1.9em' }}>Serving Detroit, The Woodward Corridor, Ferndale, Royal Oak, Birmingham, Bloomfield, Farmington, Southfield, Troy</p>
             <div className="flex justify-center gap-4">
               <a href="https://www.facebook.com/JudyBabinskiPhotography/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="bg-white rounded-full p-2 hover:opacity-70 transition-opacity">
-                <Facebook className="h-6 w-6" />
+                <Facebook className="h-7 w-7" style={{ color: '#666666' }} />
               </a>
               <a href="https://www.instagram.com/judybabinskiphotography/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="bg-white rounded-full p-2 hover:opacity-70 transition-opacity">
-                <Instagram className="h-6 w-6" />
+                <Instagram className="h-7 w-7" style={{ color: '#666666' }} />
+              </a>
+              <a href="https://www.linkedin.com/in/judy-babinski-detroit-metro-headshot-photographer-85b0a498/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="bg-white rounded-full p-2 hover:opacity-70 transition-opacity">
+                <Linkedin className="h-7 w-7" style={{ color: '#666666' }} />
               </a>
             </div>
           </div>

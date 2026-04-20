@@ -4,34 +4,31 @@ import { Playfair_Display, Montserrat } from 'next/font/google'
 const playfair = Playfair_Display({
   weight: ['400'],
   subsets: ['latin'],
-  display: 'swap',
+  display: 'optional',
 })
 
 const montserrat = Montserrat({
   weight: ['400'],
   subsets: ['latin'],
-  display: 'swap',
+  display: 'optional',
 })
 
 const testimonials = [
   {
-    name: "Hannah",
-    image: "/images/Hannah.jpg",
-    testimonial: "I instantly felt comfortable because of her kind and professional demeanor. You feel confident by her graceful guidance to make you look your best.",
-    rating: "★★★★★"
-  },
-  {
     name: "Derek",
     image: "/images/Derek.jpg",
     testimonial: "The interaction with Judy from the beginning was effortless. Her headshot pricing and options are straight forward, and the instructions to prepare for the session was clear. She is excellent to work with during the photo shoot and can capture the essence of what you want.",
-    rating: "★★★★★"
   },
   {
-    name: "Sam",
-    image: "/images/Sam.jpg",
-    testimonial: "Had the most amazing time with Judy! She has the sweetest heart! Made me feel incredible! If you need headshots..she's your gal.",
-    rating: "★★★★★"
-  }
+    name: "Krystal Martinez",
+    image: "",
+    testimonial: "Judy is amazing already for her work with our fosters at Paws in The City, but she was such a pleasure and absolute joy to work with for my first ever professional photo shoot. She did a great job putting me at ease and making me laugh at myself. I was able to learn from her, but she also respected the vision I had. I absolutely recommend Judy!!",
+  },
+  {
+    name: "Dewayne Williams",
+    image: "",
+    testimonial: "I can't stand taking pictures. Still, I had a great session with an amazing photographer Judy Babinski from Portraits For Patriots. Thank you for the free professional headshot and for supporting veterans.",
+  },
 ]
 
 export default function HappyClientsSection() {
@@ -55,12 +52,16 @@ export default function HappyClientsSection() {
               {/* Client Photo */}
               <div className="mb-6">
                 <div className="w-48 h-48 mx-auto relative overflow-hidden">
-                  <Image
-                    src={testimonial.image}
-                    alt={`${testimonial.name} headshot`}
-                    fill
-                    className="object-cover"
-                  />
+                  {testimonial.image ? (
+                    <Image
+                      src={testimonial.image}
+                      alt={`${testimonial.name} headshot`}
+                      fill
+                      className="object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full" style={{ backgroundColor: '#e5e5e5' }} />
+                  )}
                 </div>
               </div>
 
@@ -73,11 +74,6 @@ export default function HappyClientsSection() {
               <p className={`leading-relaxed mb-6 text-sm max-w-xs mx-auto ${montserrat.className}`} style={{color: '#666666'}}>
                 "{testimonial.testimonial}"
               </p>
-
-              {/* Star Rating */}
-              <div className="text-gray-600 text-sm">
-                {testimonial.rating}
-              </div>
             </div>
           ))}
         </div>

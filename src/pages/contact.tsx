@@ -7,13 +7,13 @@ import { Montserrat, Playfair_Display } from 'next/font/google'
 const playfair = Playfair_Display({
   weight: ['400'],
   subsets: ['latin'],
-  display: 'swap',
+  display: 'optional',
 })
 
 const montserrat = Montserrat({
   weight: ['400'],
   subsets: ['latin'],
-  display: 'swap',
+  display: 'optional',
 })
 
 export const getServerSideProps = async () => {

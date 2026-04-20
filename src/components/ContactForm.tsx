@@ -5,7 +5,7 @@ import { Montserrat } from 'next/font/google'
 const montserrat = Montserrat({
   weight: ['400'],
   subsets: ['latin'],
-  display: 'swap',
+  display: 'optional',
 })
 
 export default function ContactForm() {

@@ -4,7 +4,7 @@ import { Playfair_Display } from 'next/font/google'
 const playfair = Playfair_Display({
   weight: ['400'],
   subsets: ['latin'],
-  display: 'swap',
+  display: 'optional',
 })
 
 export default function HeadshotGallery() {
@@ -40,6 +40,7 @@ export default function HeadshotGallery() {
               src={image.src}
               alt={image.alt}
               fill
+              priority={index < 4}
               className="object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>

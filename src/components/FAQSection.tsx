@@ -5,19 +5,19 @@ import { Playfair_Display, Montserrat, Open_Sans } from 'next/font/google'
 const playfair = Playfair_Display({
   weight: ['400'],
   subsets: ['latin'],
-  display: 'swap',
+  display: 'optional',
 })
 
 const montserrat = Montserrat({
   weight: ['300', '400'],
   subsets: ['latin'],
-  display: 'swap',
+  display: 'optional',
 })
 
 const openSans = Open_Sans({
   weight: ['400'],
   subsets: ['latin'],
-  display: 'swap',
+  display: 'optional',
 })
 
 interface FAQItem {

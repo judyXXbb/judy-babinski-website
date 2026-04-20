@@ -5,14 +5,14 @@ import { Playfair_Display, Montserrat } from 'next/font/google'
 const montserrat = Montserrat({
   weight: ['400'],
   subsets: ['latin'],
-  display: 'swap',
+  display: 'optional',
 })
 
 
 const playfair = Playfair_Display({
   weight: ['400', '500'],
   subsets: ['latin'],
-  display: 'swap',
+  display: 'optional',
 })
 
 const gridImages = [
