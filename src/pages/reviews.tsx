@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import Image from 'next/image'
 import { Playfair_Display, Montserrat } from 'next/font/google'
 
 const playfair = Playfair_Display({
@@ -13,26 +14,120 @@ const montserrat = Montserrat({
   display: 'swap',
 })
 
-const reviews = [
+type Review = {
+  name: string
+  title?: string
+  review: string
+  photo?: string
+  featured?: boolean
+}
+
+const reviews: Review[] = [
+  {
+    name: "Kelley Keating",
+    review: "What a joy to work with Judy. She knows what looks good and how to get the best shot possible. Her communication and tips prior to your appointment are a wealth of knowledge — follow her recommendations and guidance and you will have plenty of great headshots to choose from. Highly recommend.",
+    photo: "/images/Kelley.jpg",
+    featured: true,
+  },
+  {
+    name: "Caleb Hale",
+    review: "Judy was absolutely amazing! From the little details to her expertise, she had everything covered and was extremely patient with someone like me, never having professional photos before. She was very helpful and gave directions that even made me look professional (no easy feat). Would recommend to anyone looking for a professional photographer.",
+  },
+  {
+    name: "Katie Daniel",
+    review: "Judy made my headshot session fun! I have a serious camera phobia, but before I knew it, I was relaxed and having a good time. Judy was very good at explaining how to position myself to find my best angles and communicate the desired attitude for a professional photo. I highly recommend her for anyone who feels awkward in front of a camera.",
+  },
+  {
+    name: "Krystal Martinez",
+    review: "Judy is amazing already for her work with our fosters at Paws in The City, but she was such a pleasure and absolute joy to work with for my first ever professional photo shoot. She did a great job putting me at ease and making me laugh at myself. I was able to learn from her, but she also respected the vision I had. I absolutely recommend Judy!!",
+  },
+  {
+    name: "Paul Homsher",
+    review: "Judy was incredibly professional and the photos turned out fantastic! I could not have asked for a better experience with Judy, and I would certainly recommend her to anyone else looking for professional photos.",
+  },
+  {
+    name: "Dewayne Williams",
+    review: "I can't stand taking pictures. Still, I had a great session with an amazing photographer Judy Babinski from Portraits For Patriots. Thank you for the free professional headshot and for supporting veterans.",
+  },
+  {
+    name: "John",
+    review: "Judy is absolutely amazing. I've never taken professional headshots or even photos before. To say I was nervous was an understatement. Judy was able to get me laughing and get some amazing photographs. I couldn't recommend her enough.",
+  },
+  {
+    name: "Mark Borgfeld",
+    review: "Judy is great! She is a pleasure to work with and very professional. Photos are of exceptional quality.",
+  },
   {
     name: "Hannah",
-    title: "",
     review: "I instantly felt comfortable because of her kind and professional demeanor. You feel confident by her graceful guidance to make you look your best.",
-    rating: "★★★★★"
   },
   {
     name: "Derek",
-    title: "",
     review: "The interaction with Judy from the beginning was effortless. Her headshot pricing and options are straight forward, and the instructions to prepare for the session was clear. She is excellent to work with during the photo shoot and can capture the essence of what you want.",
-    rating: "★★★★★"
   },
   {
-    name: "Sam",
-    title: "",
-    review: "Had the most amazing time with Judy! She has the sweetest heart! Made me feel incredible! If you need headshots — she's your gal.",
-    rating: "★★★★★"
+    name: "Maren Devine",
+    review: "Judy is so talented and such a pleasure to work with. Great experience!",
+  },
+  {
+    name: "Jasmine",
+    review: "Amazing! Great woman. Awesome headshots. Very pleased. A+ investment.",
   },
 ]
+
+function FeaturedReview({ review }: { review: Review }) {
+  return (
+    <div style={{ backgroundColor: '#ffffff', padding: '40px 32px', textAlign: 'center' }}>
+      {review.photo && (
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '24px' }}>
+          <Image
+            src={review.photo}
+            alt={`Headshot client ${review.name}`}
+            width={336}
+            height={336}
+            style={{ width: '336px', height: '336px', objectFit: 'cover', borderRadius: '2px' }}
+          />
+        </div>
+      )}
+      <p className={montserrat.className} style={{ fontSize: '18px', lineHeight: '1.9em', color: '#666666', marginBottom: '24px', maxWidth: '600px', margin: '0 auto 24px' }}>
+        &ldquo;{review.review}&rdquo;
+      </p>
+      <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+        <p className={playfair.className} style={{ fontSize: '22px', color: '#666666', marginBottom: '4px' }}>
+          {review.name}
+        </p>
+        {review.title && (
+          <p className={montserrat.className} style={{ fontSize: '14px', color: '#999999' }}>
+            {review.title}
+          </p>
+        )}
+        <div style={{ borderBottom: '1px solid #e5e5e5', marginTop: '16px' }} />
+      </div>
+    </div>
+  )
+}
+
+function TextReview({ review }: { review: Review }) {
+  return (
+    <div style={{ backgroundColor: '#ffffff', padding: '40px' }}>
+      <p className={montserrat.className} style={{ fontSize: '18px', lineHeight: '1.9em', color: '#666666', textAlign: 'justify', marginBottom: '24px' }}>
+        &ldquo;{review.review}&rdquo;
+      </p>
+      <div style={{ textAlign: 'center' }}>
+        <p className={playfair.className} style={{ fontSize: '22px', color: '#666666', marginBottom: '4px' }}>
+          {review.name}
+        </p>
+        {review.title && (
+          <p className={montserrat.className} style={{ fontSize: '14px', color: '#999999' }}>
+            {review.title}
+          </p>
+        )}
+        <div style={{ borderBottom: '1px solid #e5e5e5', marginTop: '16px' }} />
+      </div>
+    </div>
+  )
+}
+
 
 export default function ReviewsPage() {
   return (
@@ -47,38 +142,36 @@ export default function ReviewsPage() {
         <div className="w-16 h-px bg-gray-400 mx-auto mt-4"></div>
       </div>
 
-      {/* Reviews List */}
-      <div style={{ backgroundColor: '#f5f5f5', width: '80%', maxWidth: '900px', margin: '0 auto', paddingBottom: '80px' }}>
+      {/* Intro Text */}
+      <div style={{ backgroundColor: '#ffffff', paddingBottom: '48px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div style={{ textAlign: 'center', maxWidth: '560px', padding: '0 24px' }}>
+          <p className={montserrat.className} style={{ fontSize: '18px', lineHeight: '1.9em', color: '#666666' }}>
+            Every session is a collaboration — great lighting, genuine coaching, and a comfortable you.
+            Here&rsquo;s what clients have to say about the experience.
+          </p>
+        </div>
+      </div>
+
+      {/* What Clients Say heading */}
+      <div className="text-center py-8" style={{ backgroundColor: '#f5f5f5' }}>
+        <div className="w-16 h-px bg-gray-400 mx-auto mb-4"></div>
+        <h2 className={`text-[28px] font-normal tracking-widest ${playfair.className}`} style={{ color: '#666666' }}>
+          WHAT CLIENTS SAY
+        </h2>
+        <div className="w-16 h-px bg-gray-400 mx-auto mt-4"></div>
+      </div>
+
+      {/* Testimonials */}
+      <div style={{ backgroundColor: '#ffffff', width: '80%', maxWidth: '900px', margin: '0 auto', paddingBottom: '80px' }}>
         {reviews.map((review, index) => (
-          <div
-            key={index}
-            style={{
-              backgroundColor: '#ffffff',
-              marginTop: '40px',
-              padding: '40px',
-            }}
-          >
-            <p className={montserrat.className} style={{ fontSize: '18px', lineHeight: '1.9em', color: '#666666', textAlign: 'justify', marginBottom: '24px' }}>
-              &ldquo;{review.review}&rdquo;
-            </p>
-            <div style={{ borderTop: '1px solid #e5e5e5', paddingTop: '16px' }}>
-              <p className={`${playfair.className}`} style={{ fontSize: '22px', color: '#666666', marginBottom: '4px' }}>
-                {review.name}
-              </p>
-              {review.title && (
-                <p className={montserrat.className} style={{ fontSize: '14px', color: '#999999' }}>
-                  {review.title}
-                </p>
-              )}
-              <p style={{ color: '#bbf7d0', fontSize: '18px', marginTop: '8px' }}>
-                {review.rating}
-              </p>
-            </div>
+          <div key={index} style={{ marginTop: '20px' }}>
+            {review.featured
+              ? <FeaturedReview review={review} />
+              : <TextReview review={review} />
+            }
           </div>
         ))}
       </div>
-
-      <div style={{ height: '40px', backgroundColor: '#f5f5f5' }} />
 
     </Layout>
   )

@@ -9,13 +9,21 @@ const SITE_URL = 'https://www.judybabinskiphotos.com'
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': ['LocalBusiness', 'ProfessionalService'],
+  '@type': ['LocalBusiness', 'ProfessionalService', 'PhotographyBusiness'],
   name: 'Judy Babinski Photography',
   url: SITE_URL,
   telephone: '+1-972-953-6259',
   email: 'judy@judybabinskiphotos.com',
   image: `${SITE_URL}/images/Judy_Babinski_Photos__.jpg`,
-  description: 'Professional headshot photography serving Detroit Metro. Corporate headshots, actor headshots, and personal branding photography.',
+  description: 'Judy Babinski Photography specializes in professional headshots for business professionals, corporate teams, actors, models, and personal branding in the Detroit Metro area. Studio located in Berkley, MI.',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '3505 Kipling Ave.',
+    addressLocality: 'Berkley',
+    addressRegion: 'MI',
+    postalCode: '48072',
+    addressCountry: 'US',
+  },
   areaServed: { '@type': 'City', name: 'Detroit', containedInPlace: { '@type': 'State', name: 'Michigan' } },
   priceRange: '$$',
 }
