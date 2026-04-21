@@ -26,7 +26,7 @@ export default function HeadshotGallery() {
         <div className="text-center">
           <div className="w-16 h-px bg-gray-400 mx-auto mb-4"></div>
           <h1 className={`text-[50px] font-normal tracking-widest ${playfair.className}`} style={{color: '#666666'}}>
-            HEADSHOTS DETROIT
+            PROFESSIONAL HEADSHOTS DETROIT
           </h1>
           <div className="w-16 h-px bg-gray-400 mx-auto mt-4"></div>
         </div>

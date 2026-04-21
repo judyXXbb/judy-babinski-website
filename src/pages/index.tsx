@@ -32,12 +32,21 @@ export default function HomePage({ frontmatter, content }: { frontmatter: any, c
       <div dangerouslySetInnerHTML={{ __html: content }} />
       <RelaxAndLaughSection />
       <LoveYourHeadshotSection />
-      <TheProcessSection />
       <HappyClientsSection />
+      <div className="text-center py-12" style={{ backgroundColor: '#ffffff' }}>
+        <a
+          href="/reviews"
+          className="inline-block px-6 py-3 rounded-full font-medium tracking-wider uppercase transition-colors"
+          style={{ fontSize: '14px', color: '#666666', backgroundColor: 'rgba(158,239,217,0.41)', fontFamily: 'inherit' }}
+        >
+          Read More Client Reviews
+        </a>
+      </div>
+      <TheProcessSection />
       <FAQSection />
       <BusinessHeadshotsSection />
-      <ActorModelHeadshotsSection />
       <ProfessionalHeadshotsSection />
+      <ActorModelHeadshotsSection />
       <BrandingHeaderSection />
       <PersonalBrandingSection />
       <BrandingForPerformersSection />

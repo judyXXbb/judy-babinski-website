@@ -14,7 +14,7 @@ const localBusinessSchema = {
   url: SITE_URL,
   telephone: '+1-972-953-6259',
   email: 'judy@judybabinskiphotos.com',
-  image: `${SITE_URL}/images/Judy_Babinski_Photos__.jpg`,
+  image: `${SITE_URL}/images/Judy dyptich_F.jpg`,
   description: 'Judy Babinski Photography specializes in professional headshots for business professionals, corporate teams, actors, models, and personal branding in the Detroit Metro area. Studio located in Berkley, MI.',
   address: {
     '@type': 'PostalAddress',
@@ -59,8 +59,10 @@ export default function Layout({ children, title = 'Judy Babinski Photography | 
           url: canonicalUrl,
           images: [
             {
-              url: `${SITE_URL}/images/Judy_Babinski_Photos__.jpg`,
+              url: `${SITE_URL}/images/Judy dyptich_F.jpg`,
               alt: 'Judy Babinski Photography — Headshots Detroit',
+              width: 1200,
+              height: 800,
             },
           ],
         }}

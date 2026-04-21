@@ -16,6 +16,7 @@ const montserrat = Montserrat({
 export default function RelaxAndLaughSection() {
   return (
     <section className="pt-[25px] pb-4 bg-white">
+      <div style={{ width: '83.333%', maxWidth: '1024px', margin: '0 auto' }}>
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {/* Left Column - Text Content */}
         <div className="flex flex-col justify-center space-y-6 px-12 py-12" style={{ backgroundColor: '#f5f5f5' }}>
@@ -39,6 +40,7 @@ export default function RelaxAndLaughSection() {
             style={{ width: '100%', height: 'auto', display: 'block' }}
           />
         </div>
+      </div>
       </div>
     </section>
   )

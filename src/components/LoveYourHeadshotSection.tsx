@@ -25,8 +25,8 @@ export default function LoveYourHeadshotSection() {
         <div className="w-16 h-px bg-gray-400 mx-auto mt-6"></div>
       </div>
 
-      {/* Two Column Layout - full width, no outer padding */}
-      <div className="grid grid-cols-1 lg:grid-cols-[40%_60%] bg-gray-50">
+      {/* Two Column Layout */}
+      <div className="grid grid-cols-1 lg:grid-cols-[40%_60%]" style={{ backgroundColor: '#f5f5f5' }}>
         {/* Left: Text */}
         <div className={`flex items-center px-12 py-12 text-lg leading-relaxed ${montserrat.className}`} style={{ color: '#666666', textAlign: 'justify' }}>
           <p>

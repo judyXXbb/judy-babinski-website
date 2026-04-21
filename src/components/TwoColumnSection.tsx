@@ -23,6 +23,7 @@ interface TwoColumnSectionProps {
 export default function TwoColumnSection({ imageSrc, imageAlt, title, content }: TwoColumnSectionProps) {
   return (
     <section>
+      <div style={{ width: '83.333%', maxWidth: '1024px', margin: '0 auto' }}>
       <div className="grid grid-cols-1 lg:grid-cols-2">
           {/* Photo on the left */}
           <div className="w-full">
@@ -44,6 +45,7 @@ export default function TwoColumnSection({ imageSrc, imageAlt, title, content }:
               <p>{content}</p>
             </div>
           </div>
+      </div>
       </div>
     </section>
   )

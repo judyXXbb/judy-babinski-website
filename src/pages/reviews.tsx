@@ -183,7 +183,7 @@ export default function ReviewsPage() {
       <div style={{ backgroundColor: '#ffffff', paddingBottom: '48px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <div style={{ textAlign: 'center', maxWidth: '560px', padding: '0 24px' }}>
           <p className={montserrat.className} style={{ fontSize: '18px', lineHeight: '1.9em', color: '#666666' }}>
-            Every session is a collaboration — great lighting, genuine coaching, and a comfortable you.
+            Every session is a collaboration — great lighting, genuine coaching, a comfortable you and some laughter.
             Here&rsquo;s what clients have to say about the experience.
           </p>
         </div>
@@ -192,7 +192,7 @@ export default function ReviewsPage() {
       {/* What Clients Say heading */}
       <div className="text-center py-8" style={{ backgroundColor: '#f5f5f5' }}>
         <div className="w-16 h-px bg-gray-400 mx-auto mb-4"></div>
-        <h2 className={`text-[28px] font-normal tracking-widest ${playfair.className}`} style={{ color: '#666666' }}>
+        <h2 className={`text-[40px] font-normal tracking-widest ${playfair.className}`} style={{ color: '#666666' }}>
           WHAT CLIENTS SAY
         </h2>
         <div className="w-16 h-px bg-gray-400 mx-auto mt-4"></div>
