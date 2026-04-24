@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Layout from '@/components/Layout'
 import HeadshotGallery from '@/components/HeadshotGallery'
 import TwoColumnSection from '@/components/TwoColumnSection'
@@ -19,9 +20,70 @@ import matter from 'gray-matter'
 import fs from 'fs'
 import path from 'path'
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How many outfits should I bring to my headshot session?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Women should bring 6+ outfits, three casual and three business. Having a number of outfits gives you the choice of seeing how they photograph. Remember it\'s a headshot so focus on tops and jackets. Men should bring at least two jackets and 3 or 4 shirts. The shirts should be well pressed especially if worn without a jacket. Bring at least 5 ties so we can pick one that really looks great photographed.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Should I wear patterns or solid colors for my headshot?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Generally we recommend solid colors although small prints can work well also. The focus is on your face and expression. Large prints can grab the eye and take away the focus from the face.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What colors photograph well for headshots?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Bring both bold and muted colors, but especially bring some of your favorite colors. You usually know what colors best flatter your skin tones. We can try some different colors and see what photographs best for you.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What makeup tips should women follow for a headshot session?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Liquid foundation looks better than powder. Keep the lip color close to your natural lip color or 1 shade darker and glossy — no matte lipstick. Go easy on the blush and bronzer. Keep eyes looking defined but natural with soft blended eyeliner. Neutral color eyeshadow is usually best. Wear mascara and curl your lashes. Drink lots of water and get a good night\'s sleep before your session.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What hair tips should I follow for my headshot session?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Style your hair in the manner you normally would. If you want to have your hair cut, do it at least several days before your session. If you color your hair, make sure roots are touched up beforehand. Men should bring hair products to the session to allow for different looks.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you recommend a professional makeup and hair artist for headshots?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Professional makeup and hair can have a big impact on your headshot. Cost usually runs around $150. I can provide you with names of several professional makeup and hair artists if you wish to have your makeup and hair done for your headshot session.',
+      },
+    },
+  ],
+}
+
 export default function HomePage({ frontmatter, content }: { frontmatter: any, content: string }) {
   return (
     <Layout title={frontmatter.title} description={frontmatter.description}>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      </Head>
       <HeadshotGallery />
       <TwoColumnSection
         imageSrc="/images/lily.png"
