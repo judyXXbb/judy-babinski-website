@@ -101,10 +101,6 @@ const reviewSchema = {
       review: "I instantly felt comfortable because of her kind and professional demeanor. You feel confident by her graceful guidance to make you look your best.",
     },
     {
-      name: "Derek",
-      review: "The interaction with Judy from the beginning was effortless. Her headshot pricing and options are straight forward, and the instructions to prepare for the session was clear. She is excellent to work with during the photo shoot and can capture the essence of what you want.",
-    },
-    {
       name: "Maren Devine",
       review: "Judy is so talented and such a pleasure to work with. Great experience!",
     },
