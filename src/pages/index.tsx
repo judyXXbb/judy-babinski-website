@@ -4,7 +4,7 @@ import HeadshotGallery from '@/components/HeadshotGallery'
 import TwoColumnSection from '@/components/TwoColumnSection'
 import RelaxAndLaughSection from '@/components/RelaxAndLaughSection'
 import TheProcessSection from '@/components/TheProcessSection'
-import HappyClientsSection from '@/components/HappyClientsSection'
+import TestimonialsSection from '@/components/TestimonialsSection'
 import LoveYourHeadshotSection from '@/components/LoveYourHeadshotSection'
 import FAQSection from '@/components/FAQSection'
 import BusinessHeadshotsSection from '@/components/BusinessHeadshotsSection'
@@ -99,7 +99,7 @@ export default function HomePage({ frontmatter, content }: { frontmatter: any, c
       <div dangerouslySetInnerHTML={{ __html: content }} />
       <RelaxAndLaughSection />
       <LoveYourHeadshotSection />
-      <HappyClientsSection />
+      <TestimonialsSection />
       <div className="text-center py-12" style={{ backgroundColor: '#ffffff' }}>
         <a
           href="/reviews"
