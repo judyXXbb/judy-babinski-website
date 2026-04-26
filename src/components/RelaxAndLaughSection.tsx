@@ -20,14 +20,14 @@ export default function RelaxAndLaughSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {/* Left Column - Text Content */}
         <div className="flex flex-col justify-center space-y-6 px-12 py-12" style={{ backgroundColor: '#f5f5f5' }}>
-          <h2 className={`text-4xl font-bold ${playfair.className}`} style={{ color: '#666666' }}>
-            Relax and laugh.
+          <h2 className={`text-4xl font-normal ${playfair.className}`} style={{ color: '#666666' }}>
+            It&apos;s more relaxed than you think.
           </h2>
-          <p className={`leading-relaxed text-lg ${montserrat.className}`} style={{ color: '#666666' }}>
-            The secret to a great expression is to feel relaxed and
-            comfortable in front of the camera. I make sure my studio is a
-            "deer in front of the headlights" free zone.
-          </p>
+          <div className={`leading-relaxed text-lg space-y-4 ${montserrat.className}`} style={{ color: '#666666' }}>
+            <p>The session doesn&apos;t feel rushed or overly structured.</p>
+            <p>We take a little time, adjust as we go, and let things settle naturally.</p>
+            <p>You don&apos;t have to force anything. By the end, it starts to feel easy—and that&apos;s when the images really come together.</p>
+          </div>
         </div>
 
         {/* Right Column - Image flush top and bottom */}

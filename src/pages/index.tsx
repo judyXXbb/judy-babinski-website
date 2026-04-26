@@ -15,6 +15,7 @@ import PersonalBrandingSection from '@/components/PersonalBrandingSection'
 import BrandingForPerformersSection from '@/components/BrandingForPerformersSection'
 import BrandingForActorsSection from '@/components/BrandingForActorsSection'
 import ProfessionalHeadshotsSection from '@/components/ProfessionalHeadshotsSection'
+import CTASection from '@/components/CTASection'
 import PersonalBranding2Section from '@/components/PersonalBranding2Section'
 import matter from 'gray-matter'
 import fs from 'fs'
@@ -88,8 +89,12 @@ export default function HomePage({ frontmatter, content }: { frontmatter: any, c
       <TwoColumnSection
         imageSrc="/images/lily.png"
         imageAlt="Professional Headshot of Krystal, MSW"
-        title="Ordinary people. Extraordinary smiles!"
-        content="You don't have to be a movie star to have a great headshot. It only takes great coaching, great lighting, and a relaxed and comfortable you!"
+        title="You don't need to know how to pose. That's my job."
+        content={[
+          "Most people don't come in feeling totally comfortable in front of the camera—and that's completely normal.",
+          "I'll guide you through the session in a relaxed, natural way so you're not left wondering what to do.",
+          "With the right direction, good light, and a little time, things start to feel easier—and that's when the best images happen.",
+        ]}
       />
       <div dangerouslySetInnerHTML={{ __html: content }} />
       <RelaxAndLaughSection />
@@ -104,6 +109,7 @@ export default function HomePage({ frontmatter, content }: { frontmatter: any, c
           Read More Client Reviews
         </a>
       </div>
+      <CTASection />
       <TheProcessSection />
       <FAQSection />
       <BusinessHeadshotsSection />

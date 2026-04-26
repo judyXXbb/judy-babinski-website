@@ -17,10 +17,12 @@ interface TwoColumnSectionProps {
   imageSrc: string
   imageAlt: string
   title: string
-  content: string
+  content: string | string[]
 }
 
 export default function TwoColumnSection({ imageSrc, imageAlt, title, content }: TwoColumnSectionProps) {
+  const paragraphs = Array.isArray(content) ? content : [content]
+
   return (
     <section>
       <div style={{ width: '83.333%', maxWidth: '1024px', margin: '0 auto' }}>
@@ -38,11 +40,11 @@ export default function TwoColumnSection({ imageSrc, imageAlt, title, content }:
 
           {/* Text content on the right */}
           <div className="flex flex-col justify-center space-y-6 px-12 py-12" style={{ backgroundColor: '#f5f5f5' }}>
-            <h2 className={`text-3xl lg:text-4xl leading-tight font-bold ${playfair.className}`} style={{color: '#666666'}}>
+            <h2 className={`text-3xl lg:text-4xl leading-tight font-normal ${playfair.className}`} style={{color: '#666666'}}>
               {title}
             </h2>
             <div className={`prose prose-lg leading-relaxed ${montserrat.className}`} style={{color: '#666666'}}>
-              <p>{content}</p>
+              {paragraphs.map((p, i) => <p key={i}>{p}</p>)}
             </div>
           </div>
       </div>

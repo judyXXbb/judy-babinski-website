@@ -1,7 +1,13 @@
 import Image from 'next/image'
-import { Playfair_Display } from 'next/font/google'
+import { Playfair_Display, Montserrat } from 'next/font/google'
 
 const playfair = Playfair_Display({
+  weight: ['400'],
+  subsets: ['latin'],
+  display: 'optional',
+})
+
+const montserrat = Montserrat({
   weight: ['400'],
   subsets: ['latin'],
   display: 'optional',
@@ -28,7 +34,10 @@ export default function HeadshotGallery() {
           <h1 className={`text-[50px] font-normal tracking-widest ${playfair.className}`} style={{color: '#666666'}}>
             PROFESSIONAL HEADSHOTS DETROIT
           </h1>
-          <div className="w-16 h-px bg-gray-400 mx-auto mt-4"></div>
+          <p className={`text-[36px] font-normal tracking-widest mt-4 ${playfair.className}`} style={{color: '#666666'}}>
+            You&apos;ll look like yourself—on one of your best days.
+          </p>
+          <div className="w-16 h-px bg-gray-400 mx-auto mt-6"></div>
         </div>
       </div>
 
@@ -48,13 +57,16 @@ export default function HeadshotGallery() {
       </div>
 
       {/* Bottom Heading */}
-      <div className="py-8" style={{ backgroundColor: '#ffffff' }}>
-        <div className="text-center">
-          <div className="w-16 h-px bg-gray-400 mx-auto mb-4"></div>
-          <h2 className={`text-[50px] font-normal tracking-widest ${playfair.className}`} style={{color: '#666666'}}>
-            LOVE YOUR HEADSHOT
+      <div className="py-10" style={{ backgroundColor: '#ffffff' }}>
+        <div className="text-center max-w-2xl mx-auto px-6">
+          <div className="w-16 h-px bg-gray-400 mx-auto mb-6"></div>
+          <h2 className={`text-[28px] md:text-[34px] font-normal leading-snug ${playfair.className}`} style={{color: '#666666'}}>
+            It&apos;s completely normal to feel a little unsure in front of the camera. I&apos;ll help you through it.
           </h2>
-          <div className="w-16 h-px bg-gray-400 mx-auto mt-4"></div>
+          <p className={`text-lg mt-5 leading-relaxed ${montserrat.className}`} style={{color: '#888888'}}>
+            I guide you through the process so you feel at ease—and end up with images that look natural, confident, and genuinely like you.
+          </p>
+          <div className="w-16 h-px bg-gray-400 mx-auto mt-6"></div>
         </div>
       </div>
     </section>

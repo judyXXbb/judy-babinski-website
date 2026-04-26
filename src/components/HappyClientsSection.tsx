@@ -21,8 +21,11 @@ export default function HappyClientsSection() {
       <div className="text-center pt-[26px] pb-8" style={{ backgroundColor: '#ffffff' }}>
         <div className="w-16 h-px bg-gray-400 mx-auto mb-4"></div>
         <h2 className={`text-[50px] font-normal ${playfair.className}`} style={{ color: '#666666' }}>
-          Happy Clients
+          Real experiences from real people
         </h2>
+        <p className={`text-lg mt-4 ${montserrat.className}`} style={{ color: '#888888' }}>
+          Most of the people you see here felt unsure at first. This is what they had to say afterward.
+        </p>
         <div className="w-16 h-px bg-gray-400 mx-auto mt-4"></div>
       </div>
 
