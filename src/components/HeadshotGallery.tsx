@@ -35,7 +35,7 @@ export default function HeadshotGallery() {
             PROFESSIONAL HEADSHOTS DETROIT
           </h1>
           <p className={`text-[36px] font-normal tracking-widest mt-4 ${playfair.className}`} style={{color: '#666666'}}>
-            You&apos;ll look like yourself—on one of your best days.
+            Most people don&apos;t think they&apos;re photogenic. Most of my clients leave wondering why they ever thought that!
           </p>
           <div className="w-16 h-px bg-gray-400 mx-auto mt-6"></div>
         </div>
@@ -61,7 +61,7 @@ export default function HeadshotGallery() {
         <div className="text-center max-w-2xl mx-auto px-6">
           <div className="w-16 h-px bg-gray-400 mx-auto mb-6"></div>
           <h2 className={`text-[28px] md:text-[34px] font-normal leading-snug ${playfair.className}`} style={{color: '#666666'}}>
-            It&apos;s completely normal to feel a little unsure in front of the camera. I&apos;ll help you through it.
+            My job is to create the image that shows people how you make them feel, not just how you look.
           </h2>
           <p className={`text-lg mt-5 leading-relaxed ${montserrat.className}`} style={{color: '#888888'}}>
             I guide you through the process so you feel at ease—and end up with images that look natural, confident, and genuinely like you.
