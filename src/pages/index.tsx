@@ -10,13 +10,8 @@ import FAQSection from '@/components/FAQSection'
 import BusinessHeadshotsSection from '@/components/BusinessHeadshotsSection'
 import ActorModelHeadshotsSection from '@/components/ActorModelHeadshotsSection'
 import OnLocationTeamHeadshotsSection from '@/components/OnLocationTeamHeadshotsSection'
-import BrandingHeaderSection from '@/components/BrandingHeaderSection'
-import PersonalBrandingSection from '@/components/PersonalBrandingSection'
-import BrandingForPerformersSection from '@/components/BrandingForPerformersSection'
-import BrandingForActorsSection from '@/components/BrandingForActorsSection'
 import ProfessionalHeadshotsSection from '@/components/ProfessionalHeadshotsSection'
 import CTASection from '@/components/CTASection'
-import PersonalBranding2Section from '@/components/PersonalBranding2Section'
 import matter from 'gray-matter'
 import fs from 'fs'
 import path from 'path'
@@ -115,11 +110,6 @@ export default function HomePage({ frontmatter, content }: { frontmatter: any, c
       <BusinessHeadshotsSection />
       <ProfessionalHeadshotsSection />
       <ActorModelHeadshotsSection />
-      <BrandingHeaderSection />
-      <PersonalBrandingSection />
-      <BrandingForPerformersSection />
-      <BrandingForActorsSection />
-      <PersonalBranding2Section />
       <OnLocationTeamHeadshotsSection />
       <div style={{ height: '25px', backgroundColor: '#ffffff' }} />
     </Layout>

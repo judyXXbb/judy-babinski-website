@@ -15,6 +15,5 @@ yarn.lock
 node_modules/.cache
 .next/cache
 
-# Session journal and plans (local only)
+# Session journal (local only)
 journal/
-plan/

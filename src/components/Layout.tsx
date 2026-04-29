@@ -39,9 +39,10 @@ interface LayoutProps {
   children: ReactNode
   title?: string
   description?: string
+  noindex?: boolean
 }
 
-export default function Layout({ children, title = 'Judy Babinski Photography | Headshots Detroit', description = 'Professional headshot photography in Detroit. Corporate headshots, actor headshots, and personal branding.' }: LayoutProps) {
+export default function Layout({ children, title = 'Judy Babinski Photography | Headshots Detroit', description = 'Professional headshot photography in Detroit. Corporate headshots, actor headshots, and personal branding.', noindex = false }: LayoutProps) {
   const router = useRouter()
   const path = router.pathname === '/' ? '' : router.pathname
   const canonicalUrl = `${SITE_URL}${path}`
@@ -52,6 +53,7 @@ export default function Layout({ children, title = 'Judy Babinski Photography | 
         title={title}
         description={description}
         canonical={canonicalUrl}
+        noindex={noindex}
         openGraph={{
           title,
           description,
