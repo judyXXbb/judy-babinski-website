@@ -38,11 +38,9 @@ function FAQDropdown({ question, answer }: FAQItem) {
         <span>{question}</span>
         <span className="ml-4 text-xl">{open ? '−' : '+'}</span>
       </button>
-      {open && (
-        <div className={`pb-4 ${openSans.className}`} style={{ color: '#666666', fontSize: '14px', fontWeight: '400', lineHeight: '1.9em' }}>
-          {answer}
-        </div>
-      )}
+      <div className={`pb-4 ${openSans.className}`} style={{ color: '#666666', fontSize: '14px', fontWeight: '400', lineHeight: '1.9em', display: open ? 'block' : 'none' }}>
+        {answer}
+      </div>
     </div>
   )
 }
