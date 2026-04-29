@@ -28,7 +28,7 @@ export default function TheProcessSection() {
               BOOK IT
             </h3>
             <p className="text-gray-600 leading-relaxed text-sm">
-              Time is precious so we make it as easy as clicking on a calendar. Click on the View Pricing Button and then Click on the blue Schedule Session button to see the calendar. Pick your date and time from the available dates and you're booked for a great session.
+              Time is precious so we make it as easy as clicking on a calendar. Click on the View Pricing Button and then Click on the blue Schedule Session button to see the calendar. Pick your date and time from the available dates and you&apos;re booked for a great session.
             </p>
           </div>
 

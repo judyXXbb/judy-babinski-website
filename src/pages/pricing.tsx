@@ -95,7 +95,7 @@ export default function PricingPage() {
         <div className="text-center" style={{ marginTop: '36px' }}>
           <h3 className={`font-normal ${montserrat.className}`} style={{ fontSize: '27px', lineHeight: '1.2em', color: '#666666', marginBottom: '8px' }}>Image Fees</h3>
           <p className={`font-normal ${montserrat.className}`} style={{ fontSize: '27px', lineHeight: '1.2em', color: '#666666', marginBottom: '10px' }}>$100 per Image</p>
-          <p className={`${montserrat.className}`} style={{ fontSize: '17px', lineHeight: '1.9em', color: '#666666', textAlign: 'justify' }}>I DO NOT INCLUDE IMAGES IN THIS SESSION FEE AS I FIND THAT MY CLIENTS' NEEDS FOR IMAGES VARIES. SOME CLIENTS WANT MULTIPLE IMAGES FOR USE ACROSS THEIR WEBSITE AND OTHER SOCIAL MEDIA APPLICATIONS. OTHER CLIENTS ARE JUST INTERESTED IN PURCHASING ONE IMAGE FOR LINKEDIN. BY SPLITTING THE COST OF YOUR HEADSHOT SESSION INTO TWO PIECES I AM ABLE TO OFFER YOU THIS FLEXIBILITY.</p>
+          <p className={`${montserrat.className}`} style={{ fontSize: '17px', lineHeight: '1.9em', color: '#666666', textAlign: 'justify' }}>I DO NOT INCLUDE IMAGES IN THIS SESSION FEE AS I FIND THAT MY CLIENTS&apos; NEEDS FOR IMAGES VARIES. SOME CLIENTS WANT MULTIPLE IMAGES FOR USE ACROSS THEIR WEBSITE AND OTHER SOCIAL MEDIA APPLICATIONS. OTHER CLIENTS ARE JUST INTERESTED IN PURCHASING ONE IMAGE FOR LINKEDIN. BY SPLITTING THE COST OF YOUR HEADSHOT SESSION INTO TWO PIECES I AM ABLE TO OFFER YOU THIS FLEXIBILITY.</p>
           <div className="text-center mt-8">
             <a
               href="https://app.acuityscheduling.com/schedule.php?owner=15180961&appointmentType=5678831"

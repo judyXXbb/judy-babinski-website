@@ -43,7 +43,7 @@ export default function HappyClientsSection() {
           </div>
           <div className="flex flex-col justify-center px-12 py-16">
             <p className={`leading-relaxed mb-6 ${montserrat.className}`} style={{ fontSize: '18px', lineHeight: '1.9em', color: '#666666' }}>
-              &ldquo;I can't stand taking pictures. Still, I had a great session with an amazing photographer Judy Babinski from Portraits For Patriots. Thank you for the free professional headshot and for supporting veterans.&rdquo;
+              &ldquo;I can&apos;t stand taking pictures. Still, I had a great session with an amazing photographer Judy Babinski from Portraits For Patriots. Thank you for the free professional headshot and for supporting veterans.&rdquo;
             </p>
             <p className={`text-2xl font-normal ${playfair.className}`} style={{ color: '#666666' }}>
               Dewayne Williams
