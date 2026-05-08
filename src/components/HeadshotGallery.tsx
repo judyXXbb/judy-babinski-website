@@ -50,6 +50,7 @@ export default function HeadshotGallery() {
               alt={image.alt}
               fill
               priority={index < 4}
+              sizes="(max-width: 768px) 50vw, 25vw"
               className="object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>

@@ -10,7 +10,6 @@ export default function BrandingPage() {
     <Layout
       title="Branding Photography | Judy Babinski Photography"
       description="Personal branding, performer branding, and actor branding photography by Judy Babinski."
-      noindex={true}
     >
       <BrandingHeaderSection />
       <PersonalBrandingSection />

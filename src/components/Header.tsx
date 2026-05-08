@@ -16,43 +16,46 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/30 backdrop-blur-sm shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center py-4">
-          {/* Contact Link - Left Quarter */}
-          <div className="flex-1 flex justify-center">
+        <div className="flex items-center justify-between py-4">
+          {/* Brand Logo - Left */}
+          <Link href="/" className="text-center" style={{ marginLeft: '-10px' }}>
+            <Image
+              src="/images/judybabinski_logo_PH.png"
+              alt="judy babinski photography"
+              width={400}
+              height={60}
+              className="h-10 md:h-12 lg:h-14 w-auto hover:opacity-80 transition-opacity"
+              priority
+            />
+          </Link>
+
+          {/* Nav Buttons - Right */}
+          <div className={`hidden md:flex items-center gap-3 ${montserrat.className}`}>
+            <Link
+              href="/branding"
+              className="text-[#666666] px-4 py-2 rounded-full font-medium tracking-wider uppercase transition-colors"
+              style={{ fontSize: '14px', backgroundColor: 'rgba(158,239,217,0.41)' }}
+            >
+              BRANDING
+            </Link>
             <Link
               href="/contact"
-              className={`text-[#666666] px-4 py-2 rounded-full font-medium tracking-wider uppercase transition-colors ${montserrat.className}`} style={{ fontSize: '14px', backgroundColor: 'rgba(158,239,217,0.41)' }}
+              className="text-[#666666] px-4 py-2 rounded-full font-medium tracking-wider uppercase transition-colors"
+              style={{ fontSize: '14px', backgroundColor: 'rgba(158,239,217,0.41)' }}
             >
               CONTACT
             </Link>
-          </div>
-
-          {/* Brand Logo - Center */}
-          <div className="flex-1 flex justify-center">
-            <Link href="/" className="text-center">
-              <Image
-                src="/images/judybabinski_logo_PH.png"
-                alt="judy babinski photography"
-                width={400}
-                height={60}
-                className="h-10 md:h-12 lg:h-14 w-auto hover:opacity-80 transition-opacity"
-                priority
-              />
-            </Link>
-          </div>
-
-          {/* Pricing Button - Right Quarter */}
-          <div className="flex-1 flex justify-center">
             <Link
               href="/pricing"
-              className={`text-[#666666] px-4 py-2 rounded-full font-medium tracking-wider uppercase transition-colors ${montserrat.className}`} style={{ fontSize: '14px', backgroundColor: 'rgba(158,239,217,0.41)' }}
+              className="text-[#666666] px-4 py-2 rounded-full font-medium tracking-wider uppercase transition-colors"
+              style={{ fontSize: '14px', backgroundColor: 'rgba(158,239,217,0.41)' }}
             >
               PRICING
             </Link>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden absolute right-4">
+          <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-[#666666] hover:text-[#444444] ml-4"
@@ -79,6 +82,13 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
+              </Link>
+              <Link
+                href="/branding"
+                className="text-[#666666] hover:text-[#444444] block px-3 py-2 text-base font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Branding
               </Link>
               <Link
                 href="/contact"

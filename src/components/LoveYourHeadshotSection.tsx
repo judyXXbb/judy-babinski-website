@@ -31,9 +31,9 @@ export default function LoveYourHeadshotSection() {
         <div className={`flex items-center px-12 py-12 text-lg leading-relaxed ${montserrat.className}`} style={{ color: '#666666', textAlign: 'justify' }}>
           <div className="space-y-4">
             <p>I&apos;m a Detroit-based headshot photographer, and I work with people who don&apos;t always feel comfortable in front of the camera.</p>
-            <p>Most people come in a little unsure—and that&apos;s completely normal.</p>
+            <p>Most people come in a little unsure, and that&apos;s completely normal.</p>
             <p>My approach is relaxed and guided. I&apos;ll help you get past the feeling of &ldquo;what am I supposed to do?&rdquo; so things start to feel more natural.</p>
-            <p>By the end of the session, it usually feels a lot easier than expected—and the images reflect that. They look like you, just on a really good day.</p>
+            <p>By the end of the session, it usually feels a lot easier than expected and the images reflect that. They look like you, just on a really good day.</p>
           </div>
         </div>
 
