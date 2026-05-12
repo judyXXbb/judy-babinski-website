@@ -39,7 +39,7 @@ export default function Footer() {
               <p>972-953-6259</p>
               <p>judy@judybabinskiphotos.com</p>
               <p>3505 Kipling Ave</p>
-              <p>Berkley, MI 48972</p>
+              <p>Berkley, MI 48072</p>
             </div>
           </div>
 

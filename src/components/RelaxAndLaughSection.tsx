@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Playfair_Display, Montserrat } from 'next/font/google'
 
 const playfair = Playfair_Display({
-  weight: ['400', '700'],
+  weight: ['400'],
   subsets: ['latin'],
   display: 'optional',
 })
@@ -26,7 +26,7 @@ export default function RelaxAndLaughSection() {
           <div className={`leading-relaxed text-lg space-y-4 ${montserrat.className}`} style={{ color: '#666666' }}>
             <p>The session doesn&apos;t feel rushed or overly structured.</p>
             <p>We take a little time, adjust as we go, and let things settle naturally.</p>
-            <p>You don&apos;t have to force anything. By the end, it starts to feel easy—and that&apos;s when the images really come together.</p>
+            <p>You don&apos;t have to force anything. By the end, it starts to feel easy, and that&apos;s when the images really come together.</p>
           </div>
         </div>
 
@@ -37,6 +37,7 @@ export default function RelaxAndLaughSection() {
             alt="Idris enjoying & loving his headshot"
             width={1200}
             height={800}
+            sizes="(max-width: 1024px) 83vw, 42vw"
             style={{ width: '100%', height: 'auto', display: 'block' }}
           />
         </div>

@@ -50,7 +50,7 @@ const faqSchema = {
       name: 'What makeup tips should women follow for a headshot session?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Liquid foundation looks better than powder. Keep the lip color close to your natural lip color or 1 shade darker and glossy — no matte lipstick. Go easy on the blush and bronzer. Keep eyes looking defined but natural with soft blended eyeliner. Neutral color eyeshadow is usually best. Wear mascara and curl your lashes. Drink lots of water and get a good night\'s sleep before your session.',
+        text: 'Liquid foundation looks better than powder. Keep the lip color close to your natural lip color or 1 shade darker and glossy. No matte lipstick. Go easy on the blush and bronzer. Keep eyes looking defined but natural with soft blended eyeliner. Neutral color eyeshadow is usually best. Wear mascara and curl your lashes. Drink lots of water and get a good night\'s sleep before your session.',
       },
     },
     {
@@ -87,9 +87,9 @@ export default function HomePage({ frontmatter, content }: { frontmatter: any, c
         imageAlt="Professional Headshot of Krystal, MSW"
         title="You don't need to know how to pose. That's my job."
         content={[
-          "Most people don't come in feeling totally comfortable in front of the camera—and that's completely normal.",
+          "Most people don't come in feeling totally comfortable in front of the camera and that's completely normal.",
           "I'll guide you through the session in a relaxed, natural way so you're not left wondering what to do.",
-          "With the right direction, good light, and a little time, things start to feel easier—and that's when the best images happen.",
+          "With the right direction, good light, and a little time, things start to feel easier and that's when the best images happen.",
         ]}
       />
       <div dangerouslySetInnerHTML={{ __html: content }} />

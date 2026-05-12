@@ -9,7 +9,7 @@ const playfair = Playfair_Display({
 })
 
 const montserrat = Montserrat({
-  weight: ['300', '400'],
+  weight: ['400'],
   subsets: ['latin'],
   display: 'optional',
 })

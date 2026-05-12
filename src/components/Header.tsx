@@ -29,26 +29,26 @@ export default function Header() {
             />
           </Link>
 
-          {/* Nav Buttons - Right */}
-          <div className={`hidden md:flex items-center gap-3 ${montserrat.className}`}>
+          {/* Nav Links - Right */}
+          <div className={`hidden md:flex items-center gap-8 ${montserrat.className}`}>
             <Link
               href="/branding"
-              className="text-[#666666] px-4 py-2 rounded-full font-medium tracking-wider uppercase transition-colors"
-              style={{ fontSize: '14px', backgroundColor: 'rgba(158,239,217,0.41)' }}
+              className="text-[#666666] hover:text-[#444444] font-medium tracking-wider uppercase transition-colors"
+              style={{ fontSize: '14px' }}
             >
               BRANDING
             </Link>
             <Link
               href="/contact"
-              className="text-[#666666] px-4 py-2 rounded-full font-medium tracking-wider uppercase transition-colors"
-              style={{ fontSize: '14px', backgroundColor: 'rgba(158,239,217,0.41)' }}
+              className="text-[#666666] hover:text-[#444444] font-medium tracking-wider uppercase transition-colors"
+              style={{ fontSize: '14px' }}
             >
               CONTACT
             </Link>
             <Link
               href="/pricing"
-              className="text-[#666666] px-4 py-2 rounded-full font-medium tracking-wider uppercase transition-colors"
-              style={{ fontSize: '14px', backgroundColor: 'rgba(158,239,217,0.41)' }}
+              className="text-[#666666] hover:text-[#444444] font-medium tracking-wider uppercase transition-colors"
+              style={{ fontSize: '14px' }}
             >
               PRICING
             </Link>

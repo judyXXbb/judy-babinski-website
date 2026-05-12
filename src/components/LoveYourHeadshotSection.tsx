@@ -28,7 +28,7 @@ export default function LoveYourHeadshotSection() {
       {/* Two Column Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-[40%_60%]" style={{ backgroundColor: '#f5f5f5' }}>
         {/* Left: Text */}
-        <div className={`flex items-center px-12 py-12 text-lg leading-relaxed ${montserrat.className}`} style={{ color: '#666666', textAlign: 'justify' }}>
+        <div className={`flex items-center px-12 py-12 text-lg leading-relaxed ${montserrat.className}`} style={{ color: '#666666' }}>
           <div className="space-y-4">
             <p>I&apos;m a Detroit-based headshot photographer, and I work with people who don&apos;t always feel comfortable in front of the camera.</p>
             <p>Most people come in a little unsure, and that&apos;s completely normal.</p>

@@ -15,10 +15,10 @@ const montserrat = Montserrat({
 
 export default function HeadshotGallery() {
   const headshotImages = [
-    { src: '/images/Andrea_IG.jpg', alt: 'Headshot of medical professional' },
-    { src: '/images/James_IG.jpg', alt: 'Headshot of James for his Linkedin account' },
+    { src: '/images/Andrea_IG.jpg', alt: 'Professional headshots Detroit — medical professional headshot by Judy Babinski' },
+    { src: '/images/James_IG.jpg', alt: 'Professional headshots Detroit — James, LinkedIn profile headshot' },
     { src: '/images/Cindy.jpg', alt: 'Headshot of Cindy, a corporate professional' },
-    { src: '/images/Tyler.jpg', alt: 'Professional headshot of Tyler for his Linkedin account' },
+    { src: '/images/Tyler.jpg', alt: 'Professional headshots Detroit — Tyler, LinkedIn profile headshot' },
     { src: '/images/Caleb.jpg', alt: 'Headshot of Caleb, retiring military, for his Linkedin account' },
     { src: '/images/Nykol.jpg', alt: 'Smiling headshot of Nykol, dancer and actress' },
     { src: '/images/Hs.jpg', alt: 'Impish headshot by Judy Babinski Photography' },
@@ -65,7 +65,7 @@ export default function HeadshotGallery() {
             My job is to create the image that shows people how you make them feel, not just how you look.
           </h2>
           <p className={`text-lg mt-5 leading-relaxed ${montserrat.className}`} style={{color: '#888888'}}>
-            I guide you through the process so you feel at ease—and end up with images that look natural, confident, and genuinely like you.
+            I guide you through the process so you feel at ease and end up with images that look natural, confident, and genuinely like you.
           </p>
           <div className="w-16 h-px bg-gray-400 mx-auto mt-6"></div>
         </div>
