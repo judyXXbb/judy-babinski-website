@@ -36,7 +36,7 @@ export default function Footer() {
               <hr className="border-gray-600 w-[30px]" />
             </div>
             <div className={`space-y-1 ${openSans.className}`} style={{ fontSize: '13px', color: '#666666', lineHeight: '1.8em' }}>
-              <p>972-953-6259</p>
+              <p>947-210-5459</p>
               <p>judy@judybabinskiphotos.com</p>
               <p>3505 Kipling Ave</p>
               <p>Berkley, MI 48072</p>
@@ -45,7 +45,7 @@ export default function Footer() {
 
           {/* Right Column - Service Areas + Social Media */}
           <div className="flex flex-col justify-center items-center gap-4">
-            <p className={`text-center ${crimsonText.className}`} style={{ fontSize: '22px', fontStyle: 'italic', color: '#666666', lineHeight: '1.9em' }}>Serving Detroit, The Woodward Corridor, Ferndale, Royal Oak, Birmingham, Bloomfield, Farmington, Southfield, Troy</p>
+            <p className={`text-center ${crimsonText.className}`} style={{ fontSize: '22px', fontStyle: 'italic', color: '#666666', lineHeight: '1.9em' }}>Serving Berkley, Detroit, The Woodward Corridor, Ferndale, Royal Oak, Birmingham, Bloomfield, Farmington, Southfield, Troy</p>
             <div className="flex justify-center gap-4">
               <a href="https://www.facebook.com/JudyBabinskiPhotography/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="bg-white rounded-full p-2 hover:opacity-70 transition-opacity">
                 <Facebook className="h-7 w-7" style={{ color: '#666666' }} />

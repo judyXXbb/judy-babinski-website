@@ -12,7 +12,7 @@ const localBusinessSchema = {
   '@type': ['LocalBusiness', 'ProfessionalService', 'PhotographyBusiness'],
   name: 'Judy Babinski Photography',
   url: SITE_URL,
-  telephone: '+1-972-953-6259',
+  telephone: '+1-947-210-5459',
   email: 'judy@judybabinskiphotos.com',
   image: `${SITE_URL}/images/Judy dyptich_F.jpg`,
   description: 'Judy Babinski Photography specializes in professional headshots for business professionals, corporate teams, actors, models, and personal branding in the Detroit Metro area. Studio located in Berkley, MI.',

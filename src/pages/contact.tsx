@@ -22,7 +22,7 @@ export const getServerSideProps = async () => {
 
 export default function ContactPage() {
   return (
-    <Layout title="Contact Judy Babinski Photography | Detroit Headshots" description="Book a headshot session or get in touch with Judy Babinski Photography. Serving Detroit Metro. Call 972-953-6259 or use the contact form.">
+    <Layout title="Contact Judy Babinski Photography | Detroit Headshots" description="Book a headshot session or get in touch with Judy Babinski Photography. Serving Detroit Metro. Call 947-210-5459 or use the contact form.">
 
       {/* Page Header */}
       <div className="text-center pt-[52px] pb-8" style={{ backgroundColor: '#ffffff' }}>
@@ -56,7 +56,7 @@ export default function ContactPage() {
             <div className={playfair.className} style={{ fontSize: '22px', fontWeight: '400', lineHeight: '1.9em', color: '#666666', marginTop: '16px' }}>
               <div className="flex items-center gap-3">
                 <Phone size={20} color="#bbf7d0" />
-                <a href="tel:9729536259" style={{ color: '#666666' }}>972 953 6259</a>
+                <a href="tel:9472105459" style={{ color: '#666666' }}>947 210 5459</a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={20} color="#bbf7d0" />

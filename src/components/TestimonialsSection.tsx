@@ -52,7 +52,7 @@ export default function HappyClientsSection() {
         </div>
 
         {/* Row 2: Krystal — text left, image right */}
-        <div className="grid grid-cols-1 md:grid-cols-2" style={{ backgroundColor: '#ffffff', border: '1px solid #f0f0f0' }}>
+        <div className="grid grid-cols-1 md:grid-cols-2" style={{ backgroundColor: '#f5f5f5' }}>
           <div className="flex flex-col justify-center px-12 py-16">
             <p className={`leading-relaxed mb-6 ${montserrat.className}`} style={{ fontSize: '18px', lineHeight: '1.9em', color: '#666666' }}>
               &ldquo;Judy is amazing already for her work with our fosters at Paws in The City, but she was such a pleasure and absolute joy to work with for my first ever professional photo shoot. She did a great job putting me at ease and making me laugh at myself. I was able to learn from her, but she also respected the vision I had. I absolutely recommend Judy!!&rdquo;
