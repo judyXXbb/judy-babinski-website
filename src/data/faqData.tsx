@@ -22,7 +22,7 @@ export interface FAQSubsection {
 }
 
 // Judy will supply the real URL for this article
-const SUZANNE_HREF = '#'
+const SUZANNE_HREF = 'https://www.elitedaily.com/life/culture/types-clothes-photograph-best/1807331'
 
 export const faqSubsections: FAQSubsection[] = [
   {
