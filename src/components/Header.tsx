@@ -77,13 +77,6 @@ export default function Header() {
                 Home
               </Link>
               <Link
-                href="/about"
-                className="text-[#666666] hover:text-[#444444] block px-3 py-2 text-base font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
-              </Link>
-              <Link
                 href="/branding"
                 className="text-[#666666] hover:text-[#444444] block px-3 py-2 text-base font-medium"
                 onClick={() => setIsMenuOpen(false)}
