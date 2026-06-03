@@ -6,6 +6,7 @@ export function middleware(request: NextRequest) {
   if (host === 'www.judybabinskiphotos.com') {
     const url = request.nextUrl.clone()
     url.host = 'judybabinskiphotos.com'
+    url.port = ''
     return NextResponse.redirect(url, { status: 301 })
   }
 }
