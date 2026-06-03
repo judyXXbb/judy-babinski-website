@@ -5,7 +5,7 @@ import Head from 'next/head'
 import Header from './Header'
 import Footer from './Footer'
 
-const SITE_URL = 'https://www.judybabinskiphotos.com'
+const SITE_URL = 'https://judybabinskiphotos.com'
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
