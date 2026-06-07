@@ -67,7 +67,7 @@ const reviews: Review[] = [
   },
 ]
 
-const SITE_URL = 'https://www.judybabinskiphotos.com'
+const SITE_URL = 'https://judybabinskiphotos.com'
 
 const reviewSchema = {
   '@context': 'https://schema.org',
