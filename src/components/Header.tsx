@@ -52,6 +52,13 @@ export default function Header() {
             >
               PRICING
             </Link>
+            <Link
+              href="/blog"
+              className="text-[#666666] hover:text-[#444444] font-medium tracking-wider uppercase transition-colors"
+              style={{ fontSize: '14px' }}
+            >
+              BLOG
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -103,6 +110,13 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Reviews
+              </Link>
+              <Link
+                href="/blog"
+                className="text-[#666666] hover:text-[#444444] block px-3 py-2 text-base font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blog
               </Link>
             </div>
           </div>

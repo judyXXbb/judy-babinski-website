@@ -13,6 +13,7 @@ export default function ContactForm() {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [captchaAnswer, setCaptchaAnswer] = useState('')
+  const [website, setWebsite] = useState('') // honeypot — real users leave this blank
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error' | 'captchaFail'>('idle')
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -28,7 +29,7 @@ export default function ContactForm() {
     const res = await fetch('/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, email, message }),
+      body: JSON.stringify({ name, email, message, captcha: captchaAnswer, website }),
     })
 
     if (res.ok) {
@@ -44,6 +45,20 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit}>
+
+      {/* Honeypot — hidden from humans, bots fill it and get rejected server-side */}
+      <div style={{ position: 'absolute', left: '-9999px' }} aria-hidden="true">
+        <label htmlFor="website">Website</label>
+        <input
+          type="text"
+          id="website"
+          name="website"
+          tabIndex={-1}
+          autoComplete="off"
+          value={website}
+          onChange={e => setWebsite(e.target.value)}
+        />
+      </div>
 
       {/* Row 1: Name + Email */}
       <div className="grid grid-cols-1 lg:grid-cols-2" style={{ gap: '20px', marginBottom: '20px' }}>

@@ -40,12 +40,15 @@ interface LayoutProps {
   title?: string
   description?: string
   noindex?: boolean
+  canonical?: string
 }
 
-export default function Layout({ children, title = 'Judy Babinski Photography | Headshots Detroit', description = 'Professional headshot photography in Detroit. Corporate headshots, actor headshots, and personal branding.', noindex = false }: LayoutProps) {
+export default function Layout({ children, title = 'Judy Babinski Photography | Headshots Detroit', description = 'Professional headshot photography in Detroit. Corporate headshots, actor headshots, and personal branding.', noindex = false, canonical }: LayoutProps) {
   const router = useRouter()
+  // Dynamic routes (e.g. /blog/[slug]) must pass an explicit canonical,
+  // since router.pathname would render the literal "[slug]" template.
   const path = router.pathname === '/' ? '' : router.pathname
-  const canonicalUrl = `${SITE_URL}${path}`
+  const canonicalUrl = canonical ?? `${SITE_URL}${path}`
 
   return (
     <>

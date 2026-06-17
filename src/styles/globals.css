@@ -10,3 +10,45 @@
   font-family: 'Playfair Display', serif !important;
   font-weight: 700 !important;
 }
+
+/* Blog post body — restores spacing/formatting for markdown-rendered HTML */
+.blog-content p {
+  margin-bottom: 1.25em;
+}
+.blog-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+  color: #666666;
+}
+.blog-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 1.4em;
+  margin-bottom: 0.5em;
+  color: #666666;
+}
+.blog-content ul,
+.blog-content ol {
+  margin: 0 0 1.25em 1.5em;
+  list-style: revert;
+}
+.blog-content li {
+  margin-bottom: 0.5em;
+}
+.blog-content a {
+  color: #4a7c6f;
+  text-decoration: underline;
+}
+.blog-content strong {
+  font-weight: 600;
+}
+.blog-content blockquote {
+  border-left: 3px solid #bbf7d0;
+  padding-left: 1em;
+  margin: 1.5em 0;
+  font-style: italic;
+}
