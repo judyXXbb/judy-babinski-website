@@ -15,5 +15,8 @@ yarn.lock
 node_modules/.cache
 .next/cache
 
+# TypeScript incremental build cache
+tsconfig.tsbuildinfo
+
 # Session journal (local only)
 journal/
