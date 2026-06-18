@@ -157,12 +157,22 @@ export default function PricingPage() {
       </div>
       </div>
 
-      {/* Contact Callout */}
-      <div className="max-w-4xl mx-auto px-4 py-12 text-center">
-        <p className={`${montserrat.className}`} style={{ fontSize: '18px', lineHeight: '1.4em', color: '#666666', textAlign: 'justify' }}>
-          I would love to hear from you, and if you do have any questions at all before booking, please do feel free to give me a call on 972 953 6259.
-
+      {/* Consultation Callout */}
+      <div className="max-w-4xl mx-auto px-4 py-16 text-center">
+        <p className={`${montserrat.className}`} style={{ fontSize: '18px', lineHeight: '1.6em', color: '#666666' }}>
+          Still not ready to book? Let&apos;s schedule a consultation. It&apos;s a relaxed conversation, with no camera involved, where we&apos;ll talk about what you&apos;re looking for and find the right session for you.
         </p>
+        <div className="text-center mt-8">
+          <a
+            href="https://app.acuityscheduling.com/schedule.php?owner=15180961&appointmentType=30538822"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`inline-block px-4 py-2 rounded-full font-medium tracking-wider uppercase transition-colors ${montserrat.className}`}
+            style={{ fontSize: '14px', color: '#666666', backgroundColor: 'rgba(158,239,217,0.21)' }}
+          >
+            Book a Consultation
+          </a>
+        </div>
       </div>
 
     </Layout>

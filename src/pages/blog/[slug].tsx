@@ -29,13 +29,19 @@ interface PostProps {
   description: string
   date: string
   coverImage: string | null
+  beforeImage: string | null
+  afterImage: string | null
+  beforeLabel: string | null
+  afterLabel: string | null
   contentHtml: string
   ctaText: string | null
   ctaLabel: string | null
   ctaHref: string | null
 }
 
-export default function BlogPost({ slug, title, metaTitle, description, date, coverImage, contentHtml, ctaText, ctaLabel, ctaHref }: PostProps) {
+export default function BlogPost({ slug, title, metaTitle, description, date, coverImage, beforeImage, afterImage, beforeLabel, afterLabel, contentHtml, ctaText, ctaLabel, ctaHref }: PostProps) {
+  const hasBeforeAfter = Boolean(beforeImage && afterImage)
+
   return (
     <Layout title={metaTitle ?? `${title} | Judy Babinski Photography`} description={description} canonical={`${SITE_URL}/blog/${slug}`}>
       <article style={{ backgroundColor: '#ffffff', width: '80%', maxWidth: '800px', margin: '0 auto', paddingTop: '52px', paddingBottom: '90px' }}>
@@ -48,7 +54,36 @@ export default function BlogPost({ slug, title, metaTitle, description, date, co
           {title}
         </h1>
 
-        {coverImage && (
+        {hasBeforeAfter ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2" style={{ gap: '24px', maxWidth: '700px', margin: '0 auto 40px' }}>
+            <figure style={{ margin: 0 }}>
+              <Image
+                src={beforeImage as string}
+                alt={`${title} — before`}
+                width={960}
+                height={1200}
+                style={{ width: '100%', height: 'auto', display: 'block' }}
+                priority
+              />
+              <figcaption className={montserrat.className} style={{ fontSize: '13px', color: '#999999', textAlign: 'center', marginTop: '8px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+                {beforeLabel ?? 'Before'}
+              </figcaption>
+            </figure>
+            <figure style={{ margin: 0 }}>
+              <Image
+                src={afterImage as string}
+                alt={`${title} — after`}
+                width={960}
+                height={1200}
+                style={{ width: '100%', height: 'auto', display: 'block' }}
+                priority
+              />
+              <figcaption className={montserrat.className} style={{ fontSize: '13px', color: '#999999', textAlign: 'center', marginTop: '8px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+                {afterLabel ?? 'After'}
+              </figcaption>
+            </figure>
+          </div>
+        ) : coverImage && (
           <div style={{ maxWidth: '336px', margin: '0 auto 40px' }}>
             <Image
               src={coverImage}
@@ -138,6 +173,10 @@ export const getStaticProps: GetStaticProps<PostProps> = async ({ params }) => {
       description: data.description ?? '',
       date: data.date ?? '',
       coverImage: data.coverImage ?? null,
+      beforeImage: data.beforeImage ?? null,
+      afterImage: data.afterImage ?? null,
+      beforeLabel: data.beforeLabel ?? null,
+      afterLabel: data.afterLabel ?? null,
       contentHtml,
       ctaText: data.ctaText ?? null,
       ctaLabel: data.ctaLabel ?? null,

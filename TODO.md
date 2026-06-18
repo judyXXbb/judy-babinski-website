@@ -2,14 +2,18 @@
 
 A running list of things to work on. Add new items anywhere under the relevant section.
 
-## Up Next
-- [ ] **Add a more fully developed experience section to the home page** (move/expand the "experienced headshot photographer, started in Dallas in 2016, now serving Detroit Metro" content into a proper positioning section)
+## Tomorrow
+- [ ] Finish Royal Oak: add the real image + 3 substitute reviews, then commit the held changes (see below) and push
+- [ ] Start the Ferndale location page (lean into the actor/model angle)
+- [ ] (later) Add a more fully developed experience section to the home page
 
 ## Royal Oak location page — finishing touches
 - [ ] Replace the placeholder image (`James_IG.jpg`) with the real image(s) for Royal Oak
-- [ ] Confirm or swap the 3 reviews currently shown
-- [ ] Confirm the "Book a Session" Acuity link (currently the Extended Session, appointmentType=5678831)
+- [ ] Provide the 3 substitute reviews to swap in
 - [ ] Decide whether to left-align or keep the synopsis centered
+- NOTE: two changes are already made but UNCOMMITTED, waiting to go out with the batch above:
+  - Doctors / medical-professionals FAQ (Corewell Health William Beaumont reference)
+  - Consultation-only CTA ("Book a Consultation", no pricing shown first)
 
 ## Location pages — more suburbs
 - [ ] Ferndale (lean into the actor/model angle)

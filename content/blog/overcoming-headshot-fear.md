@@ -5,6 +5,8 @@ description: "Nervous about getting your headshot taken? Detroit headshot photog
 date: "2026-06-17"
 excerpt: "Feeling anxious in front of the camera is more common than you think. Here's how the right expression, a relaxed mindset, and a skilled photographer turn headshot fear into a photo you actually love."
 coverImage: "/images/Hs.jpg"
+beforeImage: "/images/Alneesha-B.jpg"
+afterImage: "/images/Alneesha-A.jpg"
 ctaText: "Still feeling unsure? The best first step is a relaxed conversation, with no camera involved. Let's talk about what you're looking for."
 ctaLabel: "Book a Consultation"
 ctaHref: "https://app.acuityscheduling.com/schedule.php?owner=15180961&appointmentType=30538822"

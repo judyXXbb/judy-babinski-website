@@ -48,13 +48,14 @@ interface LocationProps {
   howSessionsWork: string[]
   reviews: ReviewItem[]
   faqs: FaqItem[]
+  ctaText: string | null
   ctaLabel: string | null
   ctaHref: string | null
 }
 
 export default function LocationPage({
   slug, city, heading, metaTitle, description, summary, introHtml,
-  images, howSessionsWork, reviews, faqs, ctaLabel, ctaHref,
+  images, howSessionsWork, reviews, faqs, ctaText, ctaLabel, ctaHref,
 }: LocationProps) {
   const faqSchema = faqs.length > 0 ? {
     '@context': 'https://schema.org',
@@ -181,6 +182,11 @@ export default function LocationPage({
       {/* CTA */}
       {ctaLabel && (
         <div style={{ backgroundColor: '#ffffff', width: '100%', textAlign: 'center', paddingTop: '50px', paddingBottom: '80px' }}>
+          {ctaText && (
+            <p className={montserrat.className} style={{ fontSize: '18px', lineHeight: '1.7em', color: '#666666', width: '80%', maxWidth: '700px', margin: '0 auto 24px' }}>
+              {ctaText}
+            </p>
+          )}
           {ctaHref && ctaHref.startsWith('http') ? (
             <a
               href={ctaHref}
@@ -233,6 +239,7 @@ export const getStaticProps: GetStaticProps<LocationProps> = async ({ params }) 
       howSessionsWork: data.howSessionsWork ?? [],
       reviews: data.reviews ?? [],
       faqs: data.faqs ?? [],
+      ctaText: data.ctaText ?? null,
       ctaLabel: data.ctaLabel ?? null,
       ctaHref: data.ctaHref ?? null,
     },

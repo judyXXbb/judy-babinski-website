@@ -8,8 +8,8 @@ summary: |
 
   And whatever brought you here, whether it's refreshing your LinkedIn, updating your website, or building your personal brand, I'll keep things relaxed and even fun. My goal is simple: to help you walk away with images you genuinely like.
 images:
-  - src: "/images/James_IG.jpg"
-    alt: "Professional headshot of a Royal Oak business professional"
+  - src: "/images/Andrea_IG.jpg"
+    alt: "Professional headshot by Judy Babinski Photography"
 howSessionsWork:
   - "Book your session online and we'll connect ahead of time about your goals, what to wear, and any questions you have."
   - "At your session, I guide you through every pose and expression. I shoot tethered, so you can see your photos on the screen in real time and relax knowing you're getting great shots."
@@ -36,12 +36,15 @@ faqs:
     a: "Most sessions take about 30 to 60 minutes, depending on the package and how many different looks you want. I never rush you. We take the time needed to get shots you're genuinely happy with."
   - q: "Do you photograph teams or groups?"
     a: "Yes. In addition to individual headshots, I offer on-location team headshots and corporate branding for Royal Oak businesses. Get in touch with your team size and goals and I'll put together a custom plan."
-ctaLabel: "Book a Session"
-ctaHref: "https://app.acuityscheduling.com/schedule.php?owner=15180961&appointmentType=5678831"
+  - q: "Do you photograph doctors and medical professionals?"
+    a: "Yes. Royal Oak is home to Corewell Health William Beaumont University Hospital, a major teaching hospital where medical students and residents train. I love working with physicians, residents, and other medical professionals. Whether you need a headshot for a hospital directory, LinkedIn, or a residency or fellowship application, I'll help you look confident and approachable."
+ctaText: "The best first step is a relaxed conversation, with no camera involved. Let's talk about what you're looking for, and I'll walk you through how everything works."
+ctaLabel: "Book a Consultation"
+ctaHref: "https://app.acuityscheduling.com/schedule.php?owner=15180961&appointmentType=30538822"
 ---
 
 Royal Oak is a vibrant, diverse community, full of people who take real pride in the details, from beautifully kept homes and gardens to a thriving local culture. That same appreciation for quality is what I bring to every headshot. I believe how you present yourself matters, and that a polished, professional image is worth investing in. My job is to help you put your best face forward with a headshot that reflects the care you put into everything else.
 
 Nervous in front of the camera? You're in good company, and it's my job to put you at ease. I guide you through every pose and expression, so you walk away with headshots you genuinely love. If you'd like to read more about easing those camera nerves, take a look at my post on [overcoming headshot fear](/blog/overcoming-headshot-fear).
 
-Ready to get started? You can view my [session options and pricing](/pricing), or [get in touch](/contact) with any questions. When you're ready, book your Royal Oak headshot session below.
+Ready to get started? Feel free to [get in touch](/contact) with any questions, or book a consultation below and we'll talk about what you're looking for.
