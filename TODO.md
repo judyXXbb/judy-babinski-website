@@ -38,6 +38,11 @@ Priority order: Reviews first (thinnest), then Contact, then Pricing.
 - [ ] Add more copy to the Branding page (flagged low word count)
 - [ ] New service page (planned)
 
+## Security / dependencies
+- [ ] Switch frontmatter reader off gray-matter ("soon", not urgent). gray-matter@4.0.3 (last released 2021) pins js-yaml ^3.x, which has an unpatched DoS advisory (GHSA-h67p-54hq-rp68; fix only exists in js-yaml 4.2.0). Not exploitable here — it only parses our own trusted .md frontmatter at build time — but the CVE monitor will keep flagging it. Replace with a maintained reader that uses js-yaml 4.x. Small change across the files that read content.
+- [ ] (optional) Bump the eslintrc js-yaml override from ">=4.1.1" to ">=4.2.0" to clear the dev-only copy.
+- [x] DONE 2026-06-27: nodemailer bumped to ^9.0.1 (GHSA-p6gq-j5cr-w38f)
+
 ## SEO / Search Console
 - [ ] DONE 2026-06-23: Requested indexing (URL Inspection) for the 7 pages — Home/Branding/Royal Oak already indexed; Contact, Pricing, Reviews, Headshot Fear added to priority crawl queue
 - [ ] Check back in Search Console in ~1-2 weeks to see which of the 4 queued pages got indexed
