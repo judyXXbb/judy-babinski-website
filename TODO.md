@@ -4,6 +4,8 @@ A running list of things to work on. Add new items anywhere under the relevant s
 
 ## Next up
 - [ ] Start the Ferndale location page (lean into the actor/model angle)
+- [ ] Birmingham location page (business portraits angle) — second location page enables the "Areas We Serve" cross-linking between locations
+- [ ] Publish another blog post — Judy already has several posts' worth of content written up (same style as the Headshot Fear page); just needs laying out and publishing
 - [ ] (later) Add a more fully developed experience section to the home page
 
 ## Location pages — more suburbs
@@ -15,6 +17,8 @@ A running list of things to work on. Add new items anywhere under the relevant s
 
 ## Blog
 - [ ] Publish 2-3 more posts over the coming weeks (middle-path cadence)
+- [ ] Judy has several posts' worth of content already written (same style as Headshot Fear) — ready to lay out and publish
+- [ ] Each new post = another internal-link target for the service/location pages (link to them where relevant)
 - [ ] Future post ideas: the other "ingredients" of a great headshot (referenced at the end of "Overcoming Headshot Fear")
 
 ## Strengthen non-indexed / thin pages (help them get indexed)
