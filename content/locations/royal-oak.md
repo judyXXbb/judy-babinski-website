@@ -45,6 +45,6 @@ ctaHref: "https://app.acuityscheduling.com/schedule.php?owner=15180961&appointme
 
 Royal Oak is a vibrant, diverse community, full of people who take real pride in the details, from beautifully kept homes and gardens to a thriving local culture. That same appreciation for quality is what I bring to every headshot. I believe how you present yourself matters, and that a polished, professional image is worth investing in. My job is to help you put your best face forward with a headshot that reflects the care you put into everything else.
 
-Nervous in front of the camera? You're in good company, and it's my job to put you at ease. I guide you through every pose and expression, so you walk away with headshots you genuinely love. If you'd like to read more about easing those camera nerves, take a look at my post on [overcoming headshot fear](/blog/overcoming-headshot-fear).
+Nervous in front of the camera? You're in good company, and it's my job to put you at ease. I guide you through every pose and expression, so you walk away with headshots you genuinely love. If you'd like to read more about easing those camera nerves, take a look at my post on [overcoming headshot fear](/blog/overcoming-headshot-fear), or see what [past clients have said](/reviews) about their sessions.
 
-Ready to get started? Feel free to [get in touch](/contact) with any questions, or book a consultation below and we'll talk about what you're looking for.
+Curious about cost? You'll find session options and what's included on my [pricing page](/pricing). And when you're ready to get started, feel free to [get in touch](/contact) with any questions, or book a consultation below and we'll talk about what you're looking for.
