@@ -55,13 +55,15 @@ export default function BlogIndex({ posts }: { posts: PostMeta[] }) {
             <div className="grid grid-cols-1 lg:grid-cols-4" style={{ gap: '30px' }}>
               {post.coverImage && (
                 <Link href={`/blog/${post.slug}`} className="lg:col-span-1">
-                  <Image
-                    src={post.coverImage}
-                    alt={post.title}
-                    width={400}
-                    height={267}
-                    style={{ width: '100%', height: 'auto', display: 'block' }}
-                  />
+                  <div style={{ position: 'relative', width: '100%', aspectRatio: '1 / 1' }}>
+                    <Image
+                      src={post.coverImage}
+                      alt={post.title}
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 250px"
+                      style={{ objectFit: 'cover', display: 'block' }}
+                    />
+                  </div>
                 </Link>
               )}
               <div className={post.coverImage ? 'lg:col-span-3' : 'lg:col-span-4'}>

@@ -1,12 +1,14 @@
 ---
-title: "Overcoming Headshot Fear"
-metaTitle: "Overcoming Headshot Fear: How to Relax and Look Your Best"
-description: "Nervous about getting your headshot taken? Detroit headshot photographer Judy Babinski shares how the right expression, a relaxed mindset, and a skilled photographer turn camera anxiety into a photo you love."
+title: "Feeling Not Photogenic? How to Feel Confident in Your Headshot Session"
+metaTitle: "Feeling Not Photogenic? How to Feel Confident in Your Headshot"
+description: "Feeling not photogenic? Detroit headshot photographer Judy Babinski shares how the right expression, a relaxed mindset, and a skilled photographer take you from unsure to confident in front of the camera."
 date: "2026-06-17"
-excerpt: "Feeling anxious in front of the camera is more common than you think. Here's how the right expression, a relaxed mindset, and a skilled photographer turn headshot fear into a photo you actually love."
+excerpt: "Feeling not photogenic? You're in good company. Here's how the right expression, a relaxed mindset, and a skilled photographer take you from unsure to confident in front of the camera."
 coverImage: "/images/Hs.jpg"
 beforeImage: "/images/Alneesha-B.jpg"
 afterImage: "/images/Alneesha-A.jpg"
+beforeLabel: "Unsure"
+afterLabel: "Confident"
 ctaText: "Still feeling unsure? The best first step is a relaxed conversation, with no camera involved. Let's talk about what you're looking for."
 ctaLabel: "Book a Consultation"
 ctaHref: "https://app.acuityscheduling.com/schedule.php?owner=15180961&appointmentType=30538822"
@@ -26,7 +28,7 @@ How do I capture a genuine expression, one that conveys what you want to be reco
 
 ## Ingredient #1: Confidence
 
-First, you have to feel confident: good about your hair, your makeup and grooming, and the clothing choices you made for your shoot. I'll help you with all of these. What looks good in three dimensions in a crowded room may not look as good in two dimensions on a web page. My experience, attention to detail, and eye for aesthetics let me guide your choices. Simple is best. The focus should be on your face and your personality.
+First, you have to feel confident: good about your hair, your [makeup and grooming](/blog/makeup-dos-and-donts), and the clothing choices you made for your shoot. I'll help you with all of these. What looks good in three dimensions in a crowded room may not look as good in two dimensions on a web page. My experience, attention to detail, and eye for aesthetics let me guide your choices. Simple is best. The focus should be on your face and your personality.
 
 ## Ingredient #2: A Relaxed You
 
@@ -36,4 +38,4 @@ The second ingredient is a relaxed you. This may happen immediately, or it may t
 
 Last but not least, you deserve a photographer who is genuinely interested in you and invested in making you look your very best. That's exactly what I aim to be.
 
-_Stay tuned for more posts on the other ingredients for a smashing headshot experience._
+_I've started covering the other ingredients too. Take a look at my [makeup dos and don'ts](/blog/makeup-dos-and-donts) for getting camera-ready, and stay tuned for more._

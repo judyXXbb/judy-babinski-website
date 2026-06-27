@@ -84,13 +84,13 @@ export default function BlogPost({ slug, title, metaTitle, description, date, co
             </figure>
           </div>
         ) : coverImage && (
-          <div style={{ maxWidth: '336px', margin: '0 auto 40px' }}>
+          <div style={{ position: 'relative', width: '100%', maxWidth: '336px', aspectRatio: '1 / 1', margin: '0 auto 40px' }}>
             <Image
               src={coverImage}
               alt={title}
-              width={960}
-              height={640}
-              style={{ width: '100%', height: 'auto', display: 'block' }}
+              fill
+              sizes="336px"
+              style={{ objectFit: 'cover', display: 'block' }}
               priority
             />
           </div>
