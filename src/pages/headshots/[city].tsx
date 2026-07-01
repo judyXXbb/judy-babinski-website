@@ -104,16 +104,19 @@ export default function LocationPage({
             style={{ fontSize: '17px', lineHeight: '1.7em', color: '#666666' }}
             dangerouslySetInnerHTML={{ __html: introHtml }}
           />
-          {images[0] && (
-            <div>
-              <Image
-                src={images[0].src}
-                alt={images[0].alt}
-                width={800}
-                height={1000}
-                style={{ width: '100%', height: 'auto', display: 'block' }}
-                priority
-              />
+          {images.length > 0 && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+              {images.map((img, i) => (
+                <Image
+                  key={img.src}
+                  src={img.src}
+                  alt={img.alt}
+                  width={800}
+                  height={552}
+                  style={{ width: '100%', height: 'auto', display: 'block' }}
+                  priority={i === 0}
+                />
+              ))}
             </div>
           )}
         </div>

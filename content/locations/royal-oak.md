@@ -2,14 +2,14 @@
 city: "Royal Oak"
 heading: "Headshots Royal Oak"
 metaTitle: "Headshots in Royal Oak, MI | Judy Babinski Photography"
-description: "Professional headshots for Royal Oak, MI business professionals and entrepreneurs. Relaxed, guided sessions just minutes away in neighboring Berkley."
+description: "Photographing professional headshots since 2016. Relaxed, guided sessions for Royal Oak, MI professionals and entrepreneurs, minutes from my Berkley studio."
 summary: |
   Looking for a professional headshot photographer in Royal Oak? I'd love to help. My studio is right next door in Berkley, just a few minutes from Royal Oak, so getting a polished, professional headshot is easy and convenient.
 
   And whatever brought you here, whether it's refreshing your LinkedIn, updating your website, or building your personal brand, I'll keep things relaxed and even fun. My goal is simple: to help you walk away with images you genuinely like.
 images:
-  - src: "/images/Andrea_IG.jpg"
-    alt: "Professional headshot by Judy Babinski Photography"
+  - src: "/images/royal-oak-medical-professional-headshot.jpg"
+    alt: "Medical professional headshot for Royal Oak by Judy Babinski Photography"
 howSessionsWork:
   - "Book your session online and we'll connect ahead of time about your goals, what to wear, and any questions you have."
   - "At your session, I guide you through every pose and expression. I shoot tethered, so you can see your photos on the screen in real time and relax knowing you're getting great shots."
@@ -47,4 +47,4 @@ Royal Oak is a vibrant, diverse community, full of people who take real pride in
 
 Nervous in front of the camera? You're in good company, and it's my job to put you at ease. I guide you through every pose and expression, so you walk away with headshots you genuinely love. If you'd like to read more about easing those camera nerves, take a look at my post on [feeling more confident in front of the camera](/blog/overcoming-headshot-fear), or see what [past clients have said](/reviews) about their sessions.
 
-Curious about cost? You'll find session options and what's included on my [pricing page](/pricing). And when you're ready to get started, feel free to [get in touch](/contact) with any questions, or book a consultation below and we'll talk about what you're looking for.
+Curious about cost? You'll find session options and what's included on my [pricing page](/pricing). And when you're ready to get started, feel free to [get in touch](/contact) with any questions, or book a consultation below and we'll talk about what you're looking for. I also photograph clients in nearby [Ferndale](/headshots/ferndale) and across the Detroit Metro area.

@@ -5,7 +5,7 @@ import path from 'path'
 
 export default function AboutPage({ frontmatter, content }: { frontmatter: any, content: string }) {
   return (
-    <Layout title={frontmatter.title} description={frontmatter.description}>
+    <Layout title={frontmatter.title} description={frontmatter.description} noindex>
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </Layout>
   )

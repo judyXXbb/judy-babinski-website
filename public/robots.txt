@@ -3,4 +3,3 @@ Allow: /
 Disallow: /api/
 
 Sitemap: https://judybabinskiphotos.com/sitemap.xml
-Sitemap: https://judybabinskiphotos.com/sitemap-images.xml

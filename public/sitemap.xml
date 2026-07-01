@@ -161,20 +161,52 @@
   </url>
   <url>
     <loc>https://judybabinskiphotos.com/blog</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://judybabinskiphotos.com/blog/makeup-dos-and-donts</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://judybabinskiphotos.com/images/Maxi_3.jpg</image:loc>
+      <image:title>Makeup Dos and Don'ts for Your Headshot</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://judybabinskiphotos.com/blog/overcoming-headshot-fear</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://judybabinskiphotos.com/images/Hs.jpg</image:loc>
+      <image:title>Feeling Not Photogenic? How to Feel Confident in Your Headshot Session</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://judybabinskiphotos.com/headshots/ferndale</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://judybabinskiphotos.com/images/Ferndale-Creative-1.jpg</image:loc>
+      <image:title>Creative headshot of a Ferndale professional in a beret and green glasses by Judy Babinski Photography</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://judybabinskiphotos.com/images/Ferndale-Creative-2.jpg</image:loc>
+      <image:title>Relaxed creative portrait of a Ferndale professional resting her chin on her hand by Judy Babinski Photography</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://judybabinskiphotos.com/headshots/royal-oak</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://judybabinskiphotos.com/images/royal-oak-medical-professional-headshot.jpg</image:loc>
+      <image:title>Medical professional headshot for Royal Oak by Judy Babinski Photography</image:title>
+    </image:image>
   </url>
 </urlset>
