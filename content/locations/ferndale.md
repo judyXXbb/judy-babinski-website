@@ -6,7 +6,7 @@ description: "Photographing professional headshots since 2016. Relaxed sessions 
 summary: |
   Looking for a professional headshot photographer in Ferndale? I'd love to help. My studio is right up the road in Berkley, just a short drive from Ferndale, so getting a polished, professional headshot is easy and convenient.
 
-  Ferndale is full of creative, independent people, and whatever brought you here, whether it's a headshot for LinkedIn, a portfolio for acting or modeling, or images to build your personal brand, I'll keep things relaxed and even fun. My goal is simple: to help you walk away with images you genuinely like.
+  Ferndale is full of creative, independent people who appreciate headshots and portraits that reflect who they are. Whatever brought you here, whether it's a headshot for LinkedIn, a portfolio for acting or modeling, or images to build your personal brand, I'll keep things relaxed and even fun. My goal is simple: to help you walk away with images you genuinely like.
 images:
   - src: "/images/Ferndale-Creative-1.jpg"
     alt: "Creative headshot of a Ferndale professional in a beret and green glasses by Judy Babinski Photography"
