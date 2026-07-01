@@ -7,6 +7,7 @@ A running list of things to work on. Add new items anywhere under the relevant s
 - [ ] Birmingham location page (business portraits angle) — Judy's notes are at the bottom of /Volumes/Website.09.2025/website/Ferndale.docx
 - [ ] Image-file rename pass for SEO/privacy (67 files, ~93 refs). Now safer with the auto-sitemap in place. Convention: lowercase-hyphens, descriptive, unique, no keyword-stuffing. Best done while little is indexed. (Royal Oak hero already renamed; homepage copy of it still named Andrea_IG.jpg until that person is removed from the home page.)
 - [ ] Publish another blog post — Judy already has several posts' worth of content written up (same style as the Headshot Fear page); just needs laying out and publishing
+- [ ] Redesign the top grid on the Home page (scope TBD — discuss what Judy wants it to look like)
 - [ ] (later) Add a more fully developed experience section to the home page
 
 ## Location pages — more suburbs
@@ -42,6 +43,9 @@ Priority order: Reviews first (thinnest), then Contact, then Pricing.
 ## Other pages / content
 - [ ] Add more copy to the Branding page (flagged low word count)
 - [ ] New service page (planned)
+
+## Housekeeping
+- [ ] Delete unused netlify.toml (untracked leftover — host is AWS Amplify via amplify.yml; netlify.toml is not used and can cause confusion)
 
 ## Security / dependencies
 - [ ] Switch frontmatter reader off gray-matter ("soon", not urgent). gray-matter@4.0.3 (last released 2021) pins js-yaml ^3.x, which has an unpatched DoS advisory (GHSA-h67p-54hq-rp68; fix only exists in js-yaml 4.2.0). Not exploitable here — it only parses our own trusted .md frontmatter at build time — but the CVE monitor will keep flagging it. Replace with a maintained reader that uses js-yaml 4.x. Small change across the files that read content.
