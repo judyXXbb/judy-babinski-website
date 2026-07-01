@@ -3,17 +3,18 @@
 A running list of things to work on. Add new items anywhere under the relevant section.
 
 ## Next up
-- [ ] Start the Ferndale location page (lean into the actor/model angle)
-- [ ] Birmingham location page (business portraits angle) — second location page enables the "Areas We Serve" cross-linking between locations
+- [x] DONE 2026-07-01: Ferndale location page shipped (creative/actor angle, two-way cross-link with Royal Oak)
+- [ ] Birmingham location page (business portraits angle) — Judy's notes are at the bottom of /Volumes/Website.09.2025/website/Ferndale.docx
+- [ ] Image-file rename pass for SEO/privacy (67 files, ~93 refs). Now safer with the auto-sitemap in place. Convention: lowercase-hyphens, descriptive, unique, no keyword-stuffing. Best done while little is indexed. (Royal Oak hero already renamed; homepage copy of it still named Andrea_IG.jpg until that person is removed from the home page.)
 - [ ] Publish another blog post — Judy already has several posts' worth of content written up (same style as the Headshot Fear page); just needs laying out and publishing
 - [ ] (later) Add a more fully developed experience section to the home page
 
 ## Location pages — more suburbs
-- [ ] Ferndale (lean into the actor/model angle)
+- [x] DONE 2026-07-01: Ferndale (creative/actor angle)
 - [ ] Birmingham (business portraits angle)
 - [ ] Southfield
 - [ ] Bloomfield Hills
-- [ ] Add an "Areas We Serve" links section in the footer once 2+ location pages exist (so they aren't orphan pages)
+- [ ] Add an "Areas We Serve" links section in the footer (now unblocked — 2 location pages exist; currently they only cross-link in body copy, not the footer)
 
 ## Blog
 - [ ] Publish 2-3 more posts over the coming weeks (middle-path cadence)
@@ -48,6 +49,9 @@ Priority order: Reviews first (thinnest), then Contact, then Pricing.
 - [x] DONE 2026-06-27: nodemailer bumped to ^9.0.1 (GHSA-p6gq-j5cr-w38f)
 
 ## SEO / Search Console
-- [ ] DONE 2026-06-23: Requested indexing (URL Inspection) for the 7 pages — Home/Branding/Royal Oak already indexed; Contact, Pricing, Reviews, Headshot Fear added to priority crawl queue
-- [ ] Check back in Search Console in ~1-2 weeks to see which of the 4 queued pages got indexed
-- [ ] Submit the image sitemap (sitemap-images.xml) to Search Console
+- [x] DONE 2026-06-23: Requested indexing (URL Inspection) for the 7 pages — Home/Branding/Royal Oak already indexed; Contact, Pricing, Reviews, Headshot Fear added to priority crawl queue
+- [x] DONE 2026-07-01: Auto-generating sitemap (scripts/generate-sitemap.mjs, runs on every build) — new pages self-add. Retired hand-maintained sitemap-images.xml (single source of truth = sitemap.xml).
+- [x] DONE 2026-07-01: Blank /about page set to noindex and excluded from sitemap
+- [ ] After the current deploy: request indexing for /headshots/ferndale and /blog/makeup-dos-and-donts
+- [ ] If sitemap-images.xml was ever submitted in Search Console, remove that submission (file no longer exists; sitemap.xml covers everything)
+- [ ] Check back in Search Console to see which pages got indexed (Ferndale + makeup post are the newest)
