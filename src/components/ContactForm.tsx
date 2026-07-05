@@ -1,4 +1,3 @@
-'use client'
 import { useState } from 'react'
 import { Montserrat } from 'next/font/google'
 
@@ -12,33 +11,30 @@ export default function ContactForm() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
-  const [captchaAnswer, setCaptchaAnswer] = useState('')
   const [website, setWebsite] = useState('') // honeypot — real users leave this blank
-  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error' | 'captchaFail'>('idle')
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-
-    if (parseInt(captchaAnswer) !== 7) {
-      setStatus('captchaFail')
-      return
-    }
-
     setStatus('sending')
 
-    const res = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, email, message, captcha: captchaAnswer, website }),
-    })
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message, website }),
+      })
 
-    if (res.ok) {
-      setStatus('success')
-      setName('')
-      setEmail('')
-      setMessage('')
-      setCaptchaAnswer('')
-    } else {
+      if (res.ok) {
+        setStatus('success')
+        setName('')
+        setEmail('')
+        setMessage('')
+      } else {
+        setStatus('error')
+      }
+    } catch {
+      // Network failure (offline, timeout) — don't leave the form hanging on "Sending..."
       setStatus('error')
     }
   }
@@ -70,6 +66,7 @@ export default function ContactForm() {
             value={name}
             onChange={e => setName(e.target.value)}
             required
+            maxLength={100}
             className={`placeholder:italic placeholder:text-[12px] ${montserrat.className}`}
             style={{ width: '100%', backgroundColor: '#f5f5f5', border: 'none', padding: '10px', color: '#666666', fontSize: '14px' }}
           />
@@ -82,6 +79,7 @@ export default function ContactForm() {
             value={email}
             onChange={e => setEmail(e.target.value)}
             required
+            maxLength={200}
             className={`placeholder:italic placeholder:text-[12px] ${montserrat.className}`}
             style={{ width: '100%', backgroundColor: '#f5f5f5', border: 'none', padding: '10px', color: '#666666', fontSize: '14px' }}
           />
@@ -97,24 +95,17 @@ export default function ContactForm() {
           value={message}
           onChange={e => setMessage(e.target.value)}
           required
+          maxLength={5000}
           className={`placeholder:italic placeholder:text-[12px] ${montserrat.className}`}
           style={{ width: '100%', backgroundColor: '#f5f5f5', border: 'none', padding: '10px', color: '#666666', fontSize: '14px', resize: 'vertical' }}
         />
       </div>
 
-      {/* Row 3: Captcha + Submit */}
-      <div className="flex items-center gap-4" style={{ justifyContent: 'flex-end' }}>
-        <span className={montserrat.className} style={{ fontSize: '14px', color: '#666666' }}>3 + 4 =</span>
-        <input
-          type="number"
-          value={captchaAnswer}
-          onChange={e => setCaptchaAnswer(e.target.value)}
-          required
-          className={montserrat.className}
-          style={{ width: '60px', backgroundColor: '#999999', border: 'none', padding: '10px', color: '#ffffff', fontSize: '14px', textAlign: 'center' }}
-        />
+      {/* Row 3: Submit */}
+      <div className="flex items-center" style={{ justifyContent: 'flex-end' }}>
         <button
           type="submit"
+          disabled={status === 'sending'}
           className={`rounded-full tracking-wider uppercase transition-colors ${montserrat.className}`}
           style={{ fontSize: '12px', color: '#666666', padding: '7px 17px', fontWeight: '400', backgroundColor: 'rgba(158,239,217,0.21)' }}
         >
@@ -128,11 +119,6 @@ export default function ContactForm() {
       </p>
 
       {/* Status Messages */}
-      {status === 'captchaFail' && (
-        <p className={montserrat.className} style={{ color: '#cc0000', fontSize: '13px', marginTop: '10px' }}>
-          Incorrect answer — please try again.
-        </p>
-      )}
       {status === 'success' && (
         <p className={montserrat.className} style={{ color: '#666666', fontSize: '13px', marginTop: '10px' }}>
           Your message has been sent. Thank you!
