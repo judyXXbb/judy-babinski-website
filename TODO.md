@@ -27,7 +27,7 @@ A running list of things to work on. Add new items anywhere under the relevant s
 - [ ] Birmingham (business portraits angle)
 - [ ] Southfield
 - [ ] Bloomfield Hills
-- [ ] Add an "Areas We Serve" links section in the footer (now unblocked — 2 location pages exist; currently they only cross-link in body copy, not the footer)
+- [x] DONE 2026-07-05: Footer now links the location pages site-wide (Ferndale + Royal Oak clickable in the "Serving…" line; other cities stay plain text until their pages exist). Gives every location page an inbound link from every page.
 
 ## Blog
 - [ ] Publish 2-3 more posts over the coming weeks (middle-path cadence)

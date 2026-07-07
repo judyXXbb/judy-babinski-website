@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Facebook, Instagram, Linkedin } from 'lucide-react'
 import { Playfair_Display, Open_Sans, Crimson_Text } from 'next/font/google'
 
@@ -45,7 +46,11 @@ export default function Footer() {
 
           {/* Right Column - Service Areas + Social Media */}
           <div className="flex flex-col justify-center items-center gap-4">
-            <p className={`text-center ${crimsonText.className}`} style={{ fontSize: '22px', fontStyle: 'italic', color: '#666666', lineHeight: '1.9em' }}>Serving Berkley, Detroit, The Woodward Corridor, Ferndale, Royal Oak, Birmingham, Bloomfield, Farmington, Southfield, Troy</p>
+            <p className={`text-center ${crimsonText.className}`} style={{ fontSize: '22px', fontStyle: 'italic', color: '#666666', lineHeight: '1.9em' }}>
+              Serving Berkley, Detroit, The Woodward Corridor,{' '}
+              <Link href="/headshots/ferndale" style={{ color: '#666666', textDecoration: 'underline' }}>Ferndale</Link>,{' '}
+              <Link href="/headshots/royal-oak" style={{ color: '#666666', textDecoration: 'underline' }}>Royal Oak</Link>, Birmingham, Bloomfield, Farmington, Southfield, Troy
+            </p>
             <div className="flex justify-center gap-4">
               <a href="https://www.facebook.com/JudyBabinskiPhotography/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="bg-white rounded-full p-2 hover:opacity-70 transition-opacity">
                 <Facebook className="h-7 w-7" style={{ color: '#666666' }} />
