@@ -39,8 +39,7 @@ export default function Footer() {
             <div className={`space-y-1 ${openSans.className}`} style={{ fontSize: '13px', color: '#666666', lineHeight: '1.8em' }}>
               <p>947-210-5459</p>
               <p>judy@judybabinskiphotos.com</p>
-              <p>3505 Kipling Ave</p>
-              <p>Berkley, MI 48072</p>
+              <p>Berkley, MI</p>
             </div>
           </div>
 

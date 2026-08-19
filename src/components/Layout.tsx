@@ -11,20 +11,35 @@ const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': ['LocalBusiness', 'ProfessionalService', 'PhotographyBusiness'],
   name: 'Judy Babinski Photography',
+  legalName: 'Judy Babinski Photography LLC',
   url: SITE_URL,
   telephone: '+1-947-210-5459',
   email: 'judy@judybabinskiphotos.com',
-  image: `${SITE_URL}/images/Judy dyptich_F.jpg`,
-  description: 'Judy Babinski Photography specializes in professional headshots for business professionals, corporate teams, actors, models, and personal branding in the Detroit Metro area. Studio located in Berkley, MI.',
+  image: [
+    `${SITE_URL}/images/Judy%20dyptich_F.jpg`,
+    `${SITE_URL}/images/judybabinski_logo_PH.png`,
+  ],
+  description: 'Judy Babinski Photography specializes in professional headshots for business professionals, corporate teams, actors, models, and personal branding, available both in-studio and on location across metro Detroit. Studio located in Berkley, MI.',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: '3505 Kipling Ave.',
     addressLocality: 'Berkley',
     addressRegion: 'MI',
-    postalCode: '48072',
     addressCountry: 'US',
   },
-  areaServed: { '@type': 'City', name: 'Detroit', containedInPlace: { '@type': 'State', name: 'Michigan' } },
+  areaServed: [
+    'Detroit',
+    'Ferndale',
+    'Berkley',
+    'Birmingham',
+    'Bloomfield Hills',
+    'Royal Oak',
+    'Southfield',
+    'Troy',
+  ].map((name) => ({
+    '@type': 'City',
+    name,
+    containedInPlace: { '@type': 'State', name: 'Michigan' },
+  })),
   priceRange: '$$',
   aggregateRating: {
     '@type': 'AggregateRating',
@@ -33,6 +48,11 @@ const localBusinessSchema = {
     bestRating: '5',
     worstRating: '1',
   },
+  sameAs: [
+    'https://www.instagram.com/judybabinskiphotography',
+    'https://www.facebook.com/JudyBabinskiPhotography',
+    'https://www.linkedin.com/in/judy-babinski-detroit-metro-headshot-photographer-85b0a498/',
+  ],
 }
 
 interface LayoutProps {
@@ -43,7 +63,7 @@ interface LayoutProps {
   canonical?: string
 }
 
-export default function Layout({ children, title = 'Judy Babinski Photography | Headshots Detroit', description = 'Professional headshot photography in Detroit. Corporate headshots, actor headshots, and personal branding.', noindex = false, canonical }: LayoutProps) {
+export default function Layout({ children, title = 'Judy Babinski Photography | Detroit Metro Headshot Photographer', description = 'Professional headshot photography in Detroit. Corporate headshots, actor headshots, and personal branding.', noindex = false, canonical }: LayoutProps) {
   const router = useRouter()
   // Dynamic routes (e.g. /blog/[slug]) must pass an explicit canonical,
   // since router.pathname would render the literal "[slug]" template.
@@ -62,10 +82,11 @@ export default function Layout({ children, title = 'Judy Babinski Photography | 
           description,
           type: 'website',
           url: canonicalUrl,
+          siteName: 'Judy Babinski Photography',
           images: [
             {
-              url: `${SITE_URL}/images/Judy dyptich_F.jpg`,
-              alt: 'Judy Babinski Photography — Headshots Detroit',
+              url: `${SITE_URL}/images/Judy%20dyptich_F.jpg`,
+              alt: 'Judy Babinski Photography — Detroit Metro Headshot Photographer',
               width: 1200,
               height: 800,
             },
