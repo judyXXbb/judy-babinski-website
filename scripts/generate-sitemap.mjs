@@ -27,7 +27,7 @@ function esc(s) {
 // --- Curated static/marketing pages (images live in components, not content) ---
 const staticPages = [
   {
-    path: '/', lastmod: '2026-05-08', changefreq: 'monthly', priority: '1.0',
+    path: '/', lastmod: '2026-08-19', changefreq: 'monthly', priority: '1.0',
     images: [
       ['/images/Andrea_IG.jpg', 'Headshot of medical professional'],
       ['/images/James_IG.jpg', 'Headshot of James for his LinkedIn account'],
@@ -55,7 +55,7 @@ const staticPages = [
     ],
   },
   {
-    path: '/pricing', lastmod: '2026-05-08', changefreq: 'monthly', priority: '0.8',
+    path: '/pricing', lastmod: '2026-06-18', changefreq: 'monthly', priority: '0.8',
     images: [
       ['/images/Julie.jpg', 'Professional headshot of Julie by Detroit headshot photographer Judy Babinski'],
       ['/images/Justin.jpg', 'Business headshot of Justin for his LinkedIn account'],
@@ -73,12 +73,12 @@ const staticPages = [
     ],
   },
   {
-    path: '/contact', lastmod: '2026-05-08', changefreq: 'monthly', priority: '0.7',
+    path: '/contact', lastmod: '2026-05-24', changefreq: 'monthly', priority: '0.7',
     images: [
       ['/images/Judy-Babinski-Photography-Detroit-Metro-Team-Headshots.jpg', 'Team Headshots by Judy Babinski'],
     ],
   },
-  { path: '/reviews', lastmod: '2026-05-08', changefreq: 'monthly', priority: '0.7', images: [] },
+  { path: '/reviews', lastmod: '2026-06-07', changefreq: 'monthly', priority: '0.7', images: [] },
 ]
 
 // --- Helpers to read a content directory ---
