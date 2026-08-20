@@ -20,3 +20,5 @@ tsconfig.tsbuildinfo
 
 # Session journal (local only)
 journal/
+# Generated at build time by scripts/generate-sitemap.mjs (see package.json "build")
+public/sitemap.xml
