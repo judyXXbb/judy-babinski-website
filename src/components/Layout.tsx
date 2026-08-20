@@ -9,7 +9,10 @@ const SITE_URL = 'https://judybabinskiphotos.com'
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': ['LocalBusiness', 'ProfessionalService', 'PhotographyBusiness'],
+  '@type': ['LocalBusiness', 'ProfessionalService'],
+  // PhotographyBusiness is not a schema.org type; additionalType carries the
+  // photography niche via the recognized Product Ontology vocabulary.
+  additionalType: 'http://www.productontology.org/id/Portrait_photographer',
   name: 'Judy Babinski Photography',
   legalName: 'Judy Babinski Photography LLC',
   url: SITE_URL,
