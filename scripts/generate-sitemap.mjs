@@ -82,6 +82,12 @@ const staticPages = [
 ]
 
 // --- Helpers to read a content directory ---
+// Content files without a `date:` fall back to file mtime below. That is
+// unreliable in CI: builds run from a fresh clone, so mtime is the checkout
+// time and lastmod silently becomes the deploy date. Collect offenders and
+// warn at the end of the run.
+const missingDate = []
+
 function readContent(dir) {
   const full = path.join(ROOT, 'content', dir)
   if (!fs.existsSync(full)) return []
@@ -91,6 +97,7 @@ function readContent(dir) {
       const filePath = path.join(full, file)
       const { data } = matter(fs.readFileSync(filePath, 'utf8'))
       const mtime = fs.statSync(filePath).mtime.toISOString().slice(0, 10)
+      if (!data.date) missingDate.push(`content/${dir}/${file}`)
       return { slug: file.replace(/\.md$/, ''), data, mtime }
     })
 }
@@ -156,3 +163,13 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>\n` +
 
 fs.writeFileSync(path.join(ROOT, 'public', 'sitemap.xml'), xml)
 console.log(`Generated public/sitemap.xml with ${pages.length} URLs.`)
+
+if (missingDate.length) {
+  console.warn(
+    `\n  WARNING: ${missingDate.length} content file(s) have no \`date:\` in frontmatter.\n` +
+    missingDate.map(f => `    - ${f}`).join('\n') +
+    `\n  Their <lastmod> falls back to file mtime, which on a fresh CI clone\n` +
+    `  becomes the deploy date rather than the real last edit.\n` +
+    `  Fix: add e.g. date: "YYYY-MM-DD" to each file's frontmatter.\n`
+  )
+}
