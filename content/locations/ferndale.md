@@ -1,5 +1,6 @@
 ---
 city: "Ferndale"
+date: "2026-07-07"
 heading: "Headshots Ferndale"
 metaTitle: "Headshots in Ferndale, MI | Judy Babinski Photography"
 description: "Photographing professional headshots since 2016. Relaxed sessions for Ferndale, MI professionals, creatives, and actors, a short drive from my Berkley studio."

@@ -57,7 +57,7 @@ Priority order: Reviews first (thinnest), then Contact, then Pricing.
 - [ ] New service page (planned)
 
 ## Housekeeping
-- [ ] Delete unused netlify.toml (untracked leftover — host is AWS Amplify via amplify.yml; netlify.toml is not used and can cause confusion)
+- [x] Delete unused netlify.toml (untracked leftover — host is AWS Amplify via amplify.yml; netlify.toml is not used and can cause confusion) — done 2026-08-20
 
 ## Security / dependencies
 - [ ] Switch frontmatter reader off gray-matter ("soon", not urgent). gray-matter@4.0.3 (last released 2021) pins js-yaml ^3.x, which has an unpatched DoS advisory (GHSA-h67p-54hq-rp68; fix only exists in js-yaml 4.2.0). Not exploitable here — it only parses our own trusted .md frontmatter at build time — but the CVE monitor will keep flagging it. Replace with a maintained reader that uses js-yaml 4.x. Small change across the files that read content.

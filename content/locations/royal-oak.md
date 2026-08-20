@@ -1,5 +1,6 @@
 ---
 city: "Royal Oak"
+date: "2026-07-07"
 heading: "Headshots Royal Oak"
 metaTitle: "Headshots in Royal Oak, MI | Judy Babinski Photography"
 description: "Photographing professional headshots since 2016. Relaxed, guided sessions for Royal Oak, MI professionals and entrepreneurs, minutes from my Berkley studio."
